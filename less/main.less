@@ -1,0 +1,103 @@
+@import 'normalize';
+@import 'mixins';
+
+@import 'components/flag';
+@import 'components/grid';
+@import 'components/typography';
+
+@import 'sections/layout';
+
+
+// Colors
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@grayLightest:          #f5f5f5;
+@white:                 #fff;
+
+
+// Typography
+@baseFontSize:          18px;
+@baseLineHeight:        20px;
+@baseFontFamily: 'Open Sans', sans-serif;
+@baseFontWeight: normal;
+@baseTextColor: #222;
+@textColor: #676B6A;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+// Responsive
+@ie8: ~"\0screen";   // IE8 Hack - Source: http://browserhacks.com/#hack-c9242a5ec3f073257e275102be15d95f
+@small: ~"screen and (max-width: 767px)";                                                 // Phone
+@medium: ~"screen and (min-width: 768px)";                                                // Tablet 
+@mediumLandscape: ~"screen and (max-device-width: 1024px) and (orientation: landscape)";  // Tablet Landscape 
+@large: ~"screen and (min-width: 1008px)";                                                // Desktop
+@xlarge: ~"screen and (min-width: 1248px)";                                               // Desktop Large
+@xxlarge: ~"screen and (min-width: 1408px)";                                              // Desktop XLarge
+
+// Grid
+@grid-columns: 12;
+@grid-gutter-width: 20px; // Spacing betweeen columns
+@grid-margin-width: 20px; // Spacing on outer sides of grid
+
+
+//===============================
+// Sections
+.section-banner {
+  background-color: #E0E0E0;
+  padding-top: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  
+  .h1, .h2, .h3, .h4 {
+   line-height: 1em; 
+  }
+  
+  .location {
+    margin-top: 100px;
+    
+    hr {
+      width: 230px;
+    }
+    
+    @media @medium {
+      width: auto;
+          width: 260px;
+    }
+  }
+  
+  img {
+    max-width: 60%;
+    @media @medium {
+      margin-top: 60px;
+    }
+  }
+}
+
+.section-parallax-img {
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  height: 800px;
+  @media @small {
+    display: none;
+  }
+}
+
+.img-venue {
+  background-image: url(../img/marriott.jpg);
+}
+
+.img-kc-skyline-day {
+  background-image: url(../img/kansas-city-skyline-1600.jpg);
+}
+
+.img-kc-skyline-night {
+  background-image: url(../img/kansas-city-skyline-night.jpg);
+}
+

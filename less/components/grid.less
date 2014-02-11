@@ -1,0 +1,43 @@
+// Grid Rows
+// --------------------------------------------------
+.row {
+  .make-row(); 
+}
+
+// Grid Columns
+// Columns stack under 768px
+// --------------------------------------------------
+
+// Default Column Styles 
+[class*="span"] {
+  .box-sizing(border-box);
+  min-height: 1px; // Prevent columns from collapsing when empty
+  width: 100%;
+}
+
+// At 768px, column are float to the left and split in to 12 units
+@media @medium {
+  [class*="span"] {
+    float: left;
+    padding-left:  @grid-gutter-width; // Inner gutter via padding
+    
+    // Use this flip order of grid columns
+    .row-flipped &{
+      float: right;
+    }
+  }
+
+  // 12 column grid
+  .span1 { .grid-width(1); }
+  .span2 { .grid-width(2); }
+  .span3 { .grid-width(3); }
+  .span4 { .grid-width(4); }
+  .span5 { .grid-width(5); }
+  .span6 { .grid-width(6); }
+  .span7 { .grid-width(7); }
+  .span8 { .grid-width(8); }
+  .span9 { .grid-width(9); }
+  .span10 { .grid-width(10); }
+  .span11 { .grid-width(11); }
+  .span12 { .grid-width(12); }
+}
