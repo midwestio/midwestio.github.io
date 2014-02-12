@@ -80,10 +80,12 @@
 }
 
 .section-parallax-img {
-  background-size: 100%;
-  background-position: 50%;
+  background-size: 100% auto;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
+  background-attachment: fixed;
+  postion: relative;
+  height: 1200px;
   @media @small {
     display: none;
   }
@@ -94,7 +96,7 @@
 }
 
 .img-kc-skyline-day {
-  background-image: url(../img/kansas-city-skyline-1600.jpg);
+  background-image: url(../img/kansas-city-skyline-day.jpg);
 }
 
 .img-kc-skyline-night {

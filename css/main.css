@@ -856,10 +856,12 @@ nav ul li {
   }
 }
 .section-parallax-img {
-  background-size: 100%;
-  background-position: 50%;
+  background-size: 100% auto;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
+  background-attachment: fixed;
+  postion: relative;
+  height: 1200px;
 }
 @media screen and (max-width: 767px) {
   .section-parallax-img {
