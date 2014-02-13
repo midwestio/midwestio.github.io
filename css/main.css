@@ -867,6 +867,7 @@ nav ul li {
 }
 @media screen and (max-width: 767px) {
   .section-parallax-img {
+    background-image: none !important;
     display: none;
   }
 }
