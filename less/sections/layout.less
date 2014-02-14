@@ -132,10 +132,11 @@ nav ul {
     position: relative;
     z-index: 1000;
     .translate3d(0,0,0);
+    .transition(all 0.3s ease 0s);
+    
   
     &.open {
       .translate3d(250px,0,0);
-      .transition(all 0.3s ease 0s);
       
       + .btn-menu {
         display: none;
