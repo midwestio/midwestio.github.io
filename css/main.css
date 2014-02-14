@@ -811,14 +811,14 @@ nav ul li {
     -moz-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
   }
   #main.open {
     -webkit-transform: translate3d(250px, 0, 0);
     -moz-transform: translate3d(250px, 0, 0);
     -o-transform: translate3d(250px, 0, 0);
     transform: translate3d(250px, 0, 0);
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
   }
   #main.open + .btn-menu {
     display: none;
