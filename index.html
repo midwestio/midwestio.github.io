@@ -152,10 +152,11 @@
                     });
                 }
             });
-            
-            $('header a').smoothScroll();
-            
-            
+
+            $('header a').smoothScroll( {
+              speed: 1000
+            });
+
             $('#menuButton').on('click touchstart', function(e) {
               $('#main').addClass('open');
               return false;
