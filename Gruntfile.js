@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
+  // Load the plugin that provides the "responsive_images" task.
   grunt.loadNpmTasks('grunt-responsive-images');
 
   // Default task(s).
