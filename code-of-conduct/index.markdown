@@ -1,7 +1,4 @@
----
-layout: page
-title: "Midwest.io Code of Conduct"
----
+# Midwest.io Code of Conduct
 
 Midwest.io is a community conference intended for networking and collaboration in the developer community.
 
@@ -38,11 +35,9 @@ If a participant engages in behavior that violates this code of conduct, the con
 Contact Information
 -------------------
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing "Midwest.io Staff" t-shirts. You may also contact hotel staff and ask to be put in touch with INSERT NAME HERE.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff. Conference staff will be wearing "Midwest.io Staff" t-shirts. You may also contact hotel staff and ask to be put in touch with Kevin Shekleton.
 
-If the matter is especially urgent, please call/contact any of these individuals:
-
-TODO: Names and phone numbers here
+If the matter is especially urgent, please call/contact Kevin Shekleton at 913-575-5258.
 
 Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.
 
