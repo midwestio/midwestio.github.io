@@ -13,15 +13,15 @@ module.exports = function(grunt) {
           },{
             name: 'medium',
             width: 1008,
-            quality: 70,
+            quality: 80,
           },{
             name: "large",
             width: 1248,
-            quality: 70,
+            quality: 90,
           },{
             name: "xlarge",
             width: 1408,
-            quality: 70,
+            quality: 90,
           }]
         },
         files: [{

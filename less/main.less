@@ -80,16 +80,23 @@
 }
 
 .section-parallax-img {
-  background-size: 100%;
-  background-position: 0 0;
+  background-size: 120%;
+  background-position: 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   padding: 0;
-  height: 600px;
+  height: 400px;
+  
+  @media @medium {
+    background-attachment: fixed;
+  }
+  
+  @media @large {
+    background-size: 100%;
+  }
   
   @media @small {
-    height: 200px;
+    height: 150px;
   }
 }
 

@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-venue" id="venue-img" data-stellar-background-ratio="0.1">
+            <div class="section-parallax-img img-venue" id="venue-img" data-stellar-background-ratio="0.5">
             </div>
 
             <!-- ==============================================
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-kc-skyline-day" id="kc-skyline-day" data-stellar-background-ratio="0.1">
+            <div class="section-parallax-img img-kc-skyline-day" id="kc-skyline-day" data-stellar-background-ratio="0.5">
             </div>
 
             <!-- ==============================================
@@ -101,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-kc-skyline-night" id="kc-skyline-night" data-stellar-background-ratio="0.1">
+            <div class="section-parallax-img img-kc-skyline-night" id="kc-skyline-night" data-stellar-background-ratio="0.5">
             </div>
 
             <!-- ==============================================
@@ -150,7 +150,8 @@
                 complete : function () {
                     $.stellar && $.stellar({
                       positionProperty: 'transform',
-                      horizontalScrolling: false
+                      horizontalScrolling: false,
+                      responsive: true
                     });
                 }
             });
