@@ -25,6 +25,15 @@ Run ```autoless less/ css/``` from the midwestio.github.io directory.
 This will watch the less/ directory for any changes and generate the corresponding css file.
 This is done continuously so you can make changes and see them reflected on a refresh locally.
 
+## Using Grunt to Resize Images
+
+1. brew install GraphicsMagick (image resizing)
+2. npm install -g grunt-cli
+3. npm install
+4. grunt
+
+New images can be added un Gruntfile.js to be resized.
+
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
