@@ -643,13 +643,15 @@ h6,
 }
 .text-inverse {
   color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
 }
 .text-medium {
   font-weight: 400;
 }
 .text-heavy {
   font-weight: 700;
+}
+.text-lite {
+  font-weight: 200;
 }
 .text-standout {
   color: #024FB5;
@@ -743,7 +745,7 @@ main > div h2 {
 header {
   position: fixed;
   top: 0;
-  background-color: #333333;
+  background-color: #222222;
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
@@ -851,10 +853,51 @@ nav ul li {
   }
 }
 .section-banner {
-  background-color: #E0E0E0;
+  background-color: #000;
+  background-position: center center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/banners/kansas-city-skyline-night.jpg);
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .section-banner {
+    background-image: url(../img/banners/kansas-city-skyline-night-small.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-banner {
+    background-image: url(../img/banners/kansas-city-skyline-night-medium.jpg);
+  }
+}
+@media screen and (min-width: 1008px) {
+  .section-banner {
+    background-image: url(../img/banners/kansas-city-skyline-night-large.jpg);
+  }
+}
+@media screen and (min-width: 1248px) {
+  .section-banner {
+    background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg);
+  }
+}
+.section-banner .container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section-banner svg {
+  height: 300px;
+  width: 300px;
+  max-width: 100%;
+  display: block;
+  margin: 75px auto 20px;
+}
+.section-banner .logo {
+  fill: rgba(255, 255, 255, 0.9);
 }
 .section-banner .h1,
 .section-banner .h2,
@@ -863,14 +906,20 @@ nav ul li {
   line-height: 1em;
 }
 .section-banner .location {
-  margin-top: 100px;
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .section-banner .location hr {
   width: 230px;
 }
+@media screen and (max-width: 767px) {
+  .section-banner .location {
+    margin: 20px -20px;
+    padding: 20px 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .section-banner .location {
-    width: auto;
     width: 260px;
   }
 }

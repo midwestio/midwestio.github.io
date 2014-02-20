@@ -49,25 +49,61 @@
 //===============================
 // Sections
 .section-banner {
-  background-color: #E0E0E0;
+  background-color: #000;
+  background-position: center center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  
+  background-image: url(../img/banners/kansas-city-skyline-night.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-skyline-night-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-skyline-night-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-skyline-night-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg); } 
+
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
+  
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  svg {
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 75px auto 20px;
+  }
+  
+  .logo {
+    fill: rgba(255,255,255,.9);
+  }
   
   .h1, .h2, .h3, .h4 {
    line-height: 1em; 
   }
   
   .location {
-    margin-top: 100px;
+    padding: 100px 20px;
+    background-color: rgba(0,0,0,.6);
     
     hr {
       width: 230px;
     }
     
+    @media @small {
+      margin: 20px -20px;
+      padding: 20px 0;
+    }
+    
     @media @medium {
-      width: auto;
-          width: 260px;
+      width: 260px;
     }
   }
   
