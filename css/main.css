@@ -519,6 +519,11 @@ body {
   line-height: 20px;
   color: #676b6a;
 }
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14.4px;
+  }
+}
 h1,
 h2,
 h3,
@@ -543,7 +548,7 @@ h3,
 .h1,
 .h2,
 .h3 {
-  line-height: 40px;
+  line-height: 1.1em;
 }
 h4,
 h5,
@@ -579,15 +584,15 @@ h6,
 }
 .h1-2x {
   font-size: 60px;
-  line-height: 60px;
+  line-height: 1.1em;
 }
 .h2-2x {
   font-size: 48px;
-  line-height: 48px;
+  line-height: 1.1em;
 }
 .h3-2x {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1.1em;
 }
 .h4-2x {
   font-size: 36px;
@@ -600,6 +605,26 @@ h6,
 .h6-2x {
   font-size: 28px;
   line-height: 28px;
+}
+@media screen and (max-width: 767px) {
+  .h1-2x {
+    font-size: 30px;
+  }
+  .h2-2x {
+    font-size: 24px;
+  }
+  .h3-2x {
+    font-size: 20px;
+  }
+  .h4-2x {
+    font-size: 18px;
+  }
+  .h5-2x {
+    font-size: 16px;
+  }
+  .h6-2x {
+    font-size: 14px;
+  }
 }
 .text-lead {
   margin-bottom: 50px;
@@ -681,6 +706,7 @@ abbr[title] {
 }
 body {
   font-weight: 300;
+  zoom: 1;
 }
 @media screen and (min-width: 768px) {
   body {
@@ -702,7 +728,7 @@ h6,
   font-weight: 300;
 }
 main > div {
-  padding: 50px 0;
+  padding: 25px 0;
   position: relative;
   overflow: hidden;
 }
@@ -857,17 +883,26 @@ nav ul li {
   }
 }
 .section-parallax-img {
-  background-size: 100%;
-  background-position: 0 0;
+  background-size: 120%;
+  background-position: 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   padding: 0;
-  height: 600px;
+  height: 400px;
+}
+@media screen and (min-width: 768px) {
+  .section-parallax-img {
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 1008px) {
+  .section-parallax-img {
+    background-size: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .section-parallax-img {
-    height: 200px;
+    height: 150px;
   }
 }
 .img-venue {

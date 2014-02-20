@@ -6,6 +6,10 @@ body {
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
   color: @textColor;
+  
+  @media @small {
+    font-size: @baseFontSize * .8;
+  }
 }
 
 
@@ -24,7 +28,7 @@ h1, h2, h3, h4, h5, h6,
 // Heading Line Heights
 // --------------------------------------------------
 
-h1, h2, h3, .h1, .h2, .h3 { line-height: 40px; }
+h1, h2, h3, .h1, .h2, .h3 { line-height: 1.1em; }
 h4, h5, h6, .h4, .h5, .h6 { line-height: 20px; }
 
 // Heading Sizes
@@ -37,12 +41,22 @@ h4, .h4 { .textsize4(); } // 18px
 h5, .h5 { .textsize5(); } // 16px
 h6, .h6 { .textsize6(); } // 14px
 
-.h1-2x { .textsize1(2); line-height: 60px; } // 60px
-.h2-2x { .textsize2(2); line-height: 48px; } // 48px
-.h3-2x { .textsize3(2); line-height: 40px;} // 40px
+.h1-2x { .textsize1(2); line-height: 1.1em; } // 60px
+.h2-2x { .textsize2(2); line-height: 1.1em; } // 48px
+.h3-2x { .textsize3(2); line-height: 1.1em;} // 40px
 .h4-2x { .textsize4(2); line-height: 36px; } // 36px
 .h5-2x { .textsize5(2); line-height: 32px; } // 32px
 .h6-2x { .textsize6(2); line-height: 28px;} // 28px
+
+
+@media @small {
+  .h1-2x { .textsize1(); }
+  .h2-2x { .textsize2(); }
+  .h3-2x { .textsize3(); }
+  .h4-2x { .textsize4(); }
+  .h5-2x { .textsize5(); }
+  .h6-2x { .textsize6(); }
+}
 
 
 // Type Spacing Classes
