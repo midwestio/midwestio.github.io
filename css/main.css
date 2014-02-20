@@ -888,7 +888,7 @@ nav ul li {
   background-repeat: no-repeat;
   position: relative;
   padding: 0;
-  height: 400px;
+  height: 600px;
 }
 @media screen and (min-width: 768px) {
   .section-parallax-img {
@@ -902,7 +902,7 @@ nav ul li {
 }
 @media screen and (max-width: 767px) {
   .section-parallax-img {
-    height: 150px;
+    height: 250px;
   }
 }
 .img-venue {
