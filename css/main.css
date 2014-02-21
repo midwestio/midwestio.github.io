@@ -854,35 +854,35 @@ nav ul li {
 }
 .section-banner {
   background-color: #000;
-  background-position: center center fixed;
+  background-position: bottom;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url(../img/banners/kansas-city-skyline-night.jpg);
+  background-image: url(../img/banners/kansas-city-skyline-sunset.jpg);
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .section-banner {
-    background-image: url(../img/banners/kansas-city-skyline-night-small.jpg);
+    background-image: url(../img/banners/kansas-city-skyline-sunset-small.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .section-banner {
-    background-image: url(../img/banners/kansas-city-skyline-night-medium.jpg);
+    background-image: url(../img/banners/kansas-city-skyline-sunset-medium.jpg);
   }
 }
 @media screen and (min-width: 1008px) {
   .section-banner {
-    background-image: url(../img/banners/kansas-city-skyline-night-large.jpg);
+    background-image: url(../img/banners/kansas-city-skyline-sunset-large.jpg);
   }
 }
 @media screen and (min-width: 1248px) {
   .section-banner {
-    background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg);
+    background-image: url(../img/banners/kansas-city-skyline-sunset-xlarge.jpg);
   }
 }
 .section-banner .container {

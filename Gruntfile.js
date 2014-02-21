@@ -26,7 +26,8 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['img/banners/marriott.jpg', 
+          src: ['img/banners/marriott.jpg',
+                'img/banners/kansas-city-skyline-sunset.jpg',
                 'img/banners/kansas-city-skyline-night.jpg',
                 'img/banners/kansas-city-skyline-day.jpg'],
         }]

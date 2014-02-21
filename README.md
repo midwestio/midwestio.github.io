@@ -42,6 +42,8 @@ New images can be added un Gruntfile.js to be resized.
 
 The following images are used by permission:
 
+kansas-city-skyline-sunset.jpg - Courtesy of http://www.flickr.com/photos/zachwerner/7730952314/sizes/l/
+
 kansas-city-skyline-day.jpg - Courtesy of http://www.flickr.com/photos/missouridivisionoftourism/6731511097/sizes/l/
 
 kansas-city-skyline-night.jpg - Courtesy of http://www.flickr.com/photos/photoguyinmo/5583536355/sizes/l/
