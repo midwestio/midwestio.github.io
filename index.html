@@ -38,15 +38,15 @@
     <body>
         <header>
             <div class="container">
-               <h1><a href="#">midwest.io</a></h1>
+               <h1><a href="#" data-scroll-goto="0">midwest.io</a></h1>
                <nav>
                  <ul>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="#venue">Venue</a></li>
-                   <li><a href="#cfp">Call for Presentations</a></li>
-                   <li><a href="#register">Register</a></li>
-                   <li><a href="#sponsors">Sponsors</a></li>
-                   <li><a href="#contact">Contact</a></li>
+                   <li><a href="#" data-scroll-nav="0">About</a></li>
+                   <li><a href="#" data-scroll-nav="1">Venue</a></li>
+                   <li><a href="#" data-scroll-nav="2">Call for Presentations</a></li>
+                   <li><a href="#" data-scroll-nav="3">Register</a></li>
+                   <li><a href="#" data-scroll-nav="4">Sponsors</a></li>
+                   <li><a href="#" data-scroll-nav="5">Contact</a></li>
                  </ul>
                </nav>
             </div>
@@ -55,7 +55,7 @@
             <!-- ==============================================
             About 
             ================================================-->
-            <div class="section-banner text-inverse" id="about">
+            <div class="section-banner text-inverse" data-scroll-index="0">
                 <div class="container">
                   <div class="row row-flipped" >
                     <div class="span7">
@@ -98,7 +98,7 @@
             <!-- ==============================================
             Venue 
             ================================================-->
-            <div class="section-venue text-centered" id="venue">
+            <div class="section-venue text-centered" data-scroll-index="1">
               <div class="container">
                   <h1 class="h1-2x text-standout">Venue</h1>
                   <p><a href="http://www.marriott.com/hotels/travel/mcidt-kansas-city-marriott-downtown/">Kansas City Marriott Downtown</a></p>
@@ -106,13 +106,13 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-venue" id="venue-img" data-stellar-background-ratio="0.5">
+            <div class="section-parallax-img img-venue" id="venue-img" data-stellar-background-ratio="0.5" data-scroll-index="1">
             </div>
 
             <!-- ==============================================
             Call for Presentations
             ================================================-->
-            <div class="section-cfp text-centered" id="cfp">
+            <div class="section-cfp text-centered" data-scroll-index="2">
               <div class="container">
                   <h1 class="h1-2x text-standout">Call for Presentations</h1>
                   <p>We're looking for awesome presentations for Midwest.io. As the focus of the conference is on bleeding edge technology and research, we're looking for talks that would fit into this theme.</p>
@@ -121,13 +121,13 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-kc-skyline-day" id="kc-skyline-day" data-stellar-background-ratio="0.5">
+            <div class="section-parallax-img img-kc-skyline-day" id="kc-skyline-day" data-stellar-background-ratio="0.5" data-scroll-index="2">
             </div>
 
             <!-- ==============================================
             Register 
             ================================================-->
-            <div class="section-register text-centered" id="register">
+            <div class="section-register text-centered" data-scroll-index="3">
               <div class="container">
                   <h1 class="h1-2x text-standout">Register</h1>
                   <p>Registration details will be announced soon. Check back later!</p>
@@ -135,13 +135,13 @@
                 </div>
             </div>
 
-            <div class="section-parallax-img img-kc-skyline-night" id="kc-skyline-night" data-stellar-background-ratio="0.5">
+            <div class="section-parallax-img img-kc-skyline-night" id="kc-skyline-night" data-stellar-background-ratio="0.5" data-scroll-index="3">
             </div>
 
             <!-- ==============================================
             Sponsor
             ================================================-->
-            <div class="section-sponsors text-centered" id="sponsors">
+            <div class="section-sponsors text-centered" data-scroll-index="4">
               <div class="container">
                   <h1 class="h1-2x text-standout">Sponsors</h1>
                     <p>If you’re interested in becoming a Midwest.io sponsor, check out our <a href="http://midwestio.io/midwest.io-2014-prospectus.pdf">prospectus</a>.</p>
@@ -152,7 +152,7 @@
             <!-- ==============================================
             Contact
             ================================================-->
-            <div class="section-contact text-centered" id="contact">
+            <div class="section-contact text-centered" data-scroll-index="5">
               <div class="container">
                   <h1 class="h1-2x text-standout">Contact</h1>
                     <p>Have a question? Reach out to us at <a href="https://twitter.com/midwestio">@midwestio</a> or <a href="mailto:team@midwest.io">team@midwest.io</a>.</p>
@@ -167,7 +167,7 @@
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/jquery.smooth-scroll.min.js"></script>
+        <script src="js/vendor/scrollit.min.js"></script>
         
         <script>
             Modernizr.load({
@@ -190,10 +190,6 @@
                 }
             });
 
-            $('header a').smoothScroll( {
-              speed: 1000
-            });
-
             $('#menuButton').on('click touchstart', function(e) {
               $('#main').addClass('open');
               return false;
@@ -206,7 +202,8 @@
             $('#main').on('click touchstart', function(e) {
               $('#main').removeClass('open');              
             })
-            
+
+            $(function(){$.scrollIt({scrollTime: 1000});}); 
         </script>
 
         <script type="text/javascript">
