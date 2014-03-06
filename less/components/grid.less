@@ -1,14 +1,14 @@
 // Grid Rows
 // --------------------------------------------------
 .row {
-  .make-row(); 
+  .make-row();
 }
 
 // Grid Columns
 // Columns stack under 768px
 // --------------------------------------------------
 
-// Default Column Styles 
+// Default Column Styles
 [class*="span"] {
   .box-sizing(border-box);
   min-height: 1px; // Prevent columns from collapsing when empty
@@ -20,7 +20,7 @@
   [class*="span"] {
     float: left;
     padding-left:  @grid-gutter-width; // Inner gutter via padding
-    
+
     // Use this flip order of grid columns
     .row-flipped &{
       float: right;

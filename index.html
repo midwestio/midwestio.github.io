@@ -50,10 +50,10 @@
                  </ul>
                </nav>
             </div>
-        </header> 
+        </header>
         <main id="main">
             <!-- ==============================================
-            About 
+            About
             ================================================-->
             <div class="section-banner text-inverse" data-scroll-index="0">
                 <div class="container">
@@ -96,7 +96,7 @@
             </div>
 
             <!-- ==============================================
-            Venue 
+            Venue
             ================================================-->
             <div class="section-venue text-centered" data-scroll-index="1">
               <div class="container">
@@ -125,7 +125,7 @@
             </div>
 
             <!-- ==============================================
-            Register 
+            Register
             ================================================-->
             <div class="section-register text-centered" data-scroll-index="3">
               <div class="container">
@@ -148,7 +148,7 @@
                     <p>As a sponsor, please familiarize yourself with our <a href="https://github.com/midwestio/midwestio.github.io/blob/master/code-of-conduct/index.markdown">code of conduct</a> as we want Midwest.io to be a welcoming and positive environment for all.</p>
                 </div>
             </div>
-            
+
             <!-- ==============================================
             Contact
             ================================================-->
@@ -161,14 +161,14 @@
 
         </main>
         <button class="btn-menu" id="menuButton">Menu</button>
-        
+
         <footer>
-          
+
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/scrollit.min.js"></script>
-        
+
         <script>
             Modernizr.load({
                 test: navigator.userAgent.match(/Android/i)
@@ -194,16 +194,16 @@
               $('#main').addClass('open');
               return false;
             });
-            
+
             $(document).on('click', 'header a', function(e) {
-              $('#main').removeClass('open');              
-            })
-            
-            $('#main').on('click touchstart', function(e) {
-              $('#main').removeClass('open');              
+              $('#main').removeClass('open');
             })
 
-            $(function(){$.scrollIt({scrollTime: 1000});}); 
+            $('#main').on('click touchstart', function(e) {
+              $('#main').removeClass('open');
+            })
+
+            $(function(){$.scrollIt({scrollTime: 1000});});
         </script>
 
         <script type="text/javascript">
