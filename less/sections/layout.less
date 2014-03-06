@@ -1,7 +1,7 @@
-body {  
+body {
   font-weight: 300;
   zoom: 1;
-  
+
   @media @medium {
     padding-top: 60px;
   }
@@ -15,13 +15,13 @@ h1,h2,h3,h4,h5,h6,
 main > div {
   padding: 25px 0;
   position: relative;
-  
+
   @media @medium {
-    padding: 100px 0;    
+    padding: 100px 0;
   }
-  
+
   overflow: hidden;
-  
+
   h2 {
     margin-bottom: 40px;
   }
@@ -32,17 +32,17 @@ header {
   top: 0;
   background-color: @grayDarker;
   z-index: 999;
-  
+
   @media @small {
-    
+
     left: 0;
     width: 250px;
     bottom: 0;
-    
+
     .container {
       padding: 0;
     }
-    
+
     h1 {
       padding: 5px 10px;
       font-size: 16px;
@@ -53,22 +53,22 @@ header {
     width: 100%;
     left: 0;
     bottom: auto;
-    
+
     h1 {
       float: left;
     }
   }
-   
+
   a {
     color: #FFF;
     text-decoration: none;
   }
-  
+
   h1 {
     margin: 0;
     margin-right: 20px;
     line-height: 40px
-    
+
   }
 }
 
@@ -77,24 +77,24 @@ nav ul {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  
+
   li {
     border: 1px solid #FFF;
     border-width: 1px 0 0;
   }
-  
+
   @media @small {
     a {
       display: block;
       padding: 5px 10px;
       font-size: 12px;
     }
-  
+
   }
 
   @media @medium {
     float: right;
-    
+
     li {
       border: none;
       display: inline-block;
@@ -117,7 +117,7 @@ nav ul {
   font-size: 14px;
   border-radius: 3px;
   border: 1px solid rgba(255,255,255,.7);
-  
+
   @media @medium {
     display: none;
   }
@@ -134,11 +134,11 @@ nav ul {
     z-index: 1000;
     .translate3d(0,0,0);
     .transition(all 0.3s ease 0s);
-    
-  
+
+
     &.open {
       .translate3d(250px,0,0);
-      
+
       + .btn-menu {
         display: none;
       }
