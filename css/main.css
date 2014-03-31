@@ -964,6 +964,14 @@ nav ul li {
     margin-top: 60px;
   }
 }
+.section-venue .venue-info {
+  padding-top: 150px;
+}
+@media screen and (max-width: 767px) {
+  .section-venue .venue-info {
+    padding-top: 0;
+  }
+}
 .section-parallax-img {
   background-size: 120%;
   background-position: 50%;
