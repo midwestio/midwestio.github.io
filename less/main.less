@@ -80,7 +80,7 @@
     }
   }
 
-  svg {
+  .logo {
     height: 300px;
     width: 300px;
     max-width: 100%;
@@ -91,10 +91,6 @@
       width: 75px;
       margin: 20px auto;
     }
-  }
-
-  .logo {
-    fill: rgba(255,255,255,.9);
   }
 
   .h1, .h2, .h3, .h4 {
@@ -188,10 +184,22 @@
   @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg); }
 }
 
-header a {
-  &:hover, &.active {
-    color: @grayLight;
+header {
+  a {
+    &:hover, &.active {
+      color: @grayLight;
+      svg path {
+        fill: @grayLight;
+      }
+    }
+    .logo {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 5px;
+    }
   }
+
 }
 
 table {
