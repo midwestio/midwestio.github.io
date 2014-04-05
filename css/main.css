@@ -736,16 +736,7 @@ header {
 }
 @media screen and (max-width: 767px) {
   header {
-    left: 0;
-    width: 250px;
-    bottom: 0;
-  }
-  header .container {
-    padding: 0;
-  }
-  header h1 {
-    padding: 5px 10px;
-    font-size: 16px;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -777,13 +768,6 @@ nav ul li {
   border: 1px solid #FFF;
   border-width: 1px 0 0;
 }
-@media screen and (max-width: 767px) {
-  nav ul a {
-    display: block;
-    padding: 5px 10px;
-    font-size: 12px;
-  }
-}
 @media screen and (min-width: 768px) {
   nav ul {
     float: right;
@@ -796,47 +780,8 @@ nav ul li {
     margin-right: 10px;
   }
 }
-.btn-menu {
-  position: fixed;
-  z-index: 99999;
-  top: 5px;
-  left: 5px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #FFF;
-  padding: 5px;
-  font-size: 14px;
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-}
-@media screen and (min-width: 768px) {
-  .btn-menu {
-    display: none;
-  }
-}
 #main {
   background-color: #FFF;
-}
-@media screen and (max-width: 767px) {
-  #main {
-    position: relative;
-    z-index: 1000;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-  }
-  #main.open {
-    -webkit-transform: translate3d(250px, 0, 0);
-    -moz-transform: translate3d(250px, 0, 0);
-    -o-transform: translate3d(250px, 0, 0);
-    transform: translate3d(250px, 0, 0);
-  }
-  #main.open + .btn-menu {
-    display: none;
-  }
 }
 .section-banner {
   background-color: #000;
