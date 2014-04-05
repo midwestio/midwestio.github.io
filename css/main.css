@@ -1029,3 +1029,14 @@ td {
 .sponsorship-item-desc {
   color: #555555;
 }
+#venue .map {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+}
+#venue .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
