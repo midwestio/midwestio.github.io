@@ -171,11 +171,7 @@
             </div>
 
         </main>
-        <button class="btn-menu" id="menuButton">Menu</button>
-
-        <footer>
-
-        </footer>
+        <footer></footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/scrollit.min.js"></script>
@@ -200,19 +196,6 @@
                     });
                 }
             });
-
-            $('#menuButton').on('click touchstart', function(e) {
-              $('#main').addClass('open');
-              return false;
-            });
-
-            $(document).on('click', 'header a', function(e) {
-              $('#main').removeClass('open');
-            })
-
-            $('#main').on('click touchstart', function(e) {
-              $('#main').removeClass('open');
-            })
 
             $(function(){$.scrollIt({scrollTime: 1000});});
         </script>
