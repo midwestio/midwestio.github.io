@@ -32,7 +32,7 @@ This is done continuously so you can make changes and see them reflected on a re
 3. npm install
 4. grunt
 
-New images can be added un Gruntfile.js to be resized.
+New images can be added to Gruntfile.js to be resized.
 
 ## License
 
@@ -47,5 +47,7 @@ kansas-city-skyline-sunset.jpg - Courtesy of http://www.flickr.com/photos/zachwe
 kansas-city-skyline-day.jpg - Courtesy of http://www.flickr.com/photos/missouridivisionoftourism/6731511097/sizes/l/
 
 kansas-city-skyline-night.jpg - Courtesy of http://www.flickr.com/photos/photoguyinmo/5583536355/sizes/l/
+
+kansas-city-plaza.jpg - Courtesy of https://www.flickr.com/photos/d_orf/3506339720/sizes/l/
 
 marriott.jpg - Courtesy of the [Kansas City Marriott Downtown](http://www.marriott.com/hotels/travel/mcidt-kansas-city-marriott-downtown/)

@@ -184,6 +184,14 @@
   @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg); }
 }
 
+.img-kc-plaza {
+  background-image: url(../img/banners/kansas-city-plaza.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-plaza-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-plaza-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-plaza-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-plaza-xlarge.jpg); }
+}
+
 header {
   a {
     &:hover, &.active {
@@ -246,5 +254,37 @@ th, td {
     width: 100%;
     top: 0;
     left: 0;
+  }
+}
+
+.section-schedule {
+  .schedule-day {
+    .schedule-date {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  }
+
+  .speaker {
+    margin-bottom: 40px;
+    text-align: left;
+
+    .speaker-name {
+      font-weight: bold;
+      margin-left: 110px;
+      padding-top: 20px;
+    }
+
+    .speaker-bio {
+      margin-left: 110px;
+    }
+
+    img {
+      float: left;
+      height: 100px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+    }
   }
 }
