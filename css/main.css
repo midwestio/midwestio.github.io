@@ -1083,6 +1083,26 @@ td {
   top: 0;
   left: 0;
 }
+.section-sponsors .sponsor {
+  border-bottom: 1px solid #ddd;
+}
+.section-sponsors .diamond {
+  height: 150px;
+}
+.section-sponsors .platinum {
+  height: 120px;
+}
+.section-sponsors .gold {
+  height: 100px;
+}
+.section-sponsors .silver {
+  height: 80px;
+}
+.section-sponsors img {
+  vertical-align: middle;
+  padding: 30px;
+  width: auto;
+}
 .section-schedule .schedule-day .schedule-date {
   margin-top: 20px;
   margin-bottom: 10px;
