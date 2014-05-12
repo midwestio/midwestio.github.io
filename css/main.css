@@ -1094,6 +1094,10 @@ td {
 .section-sponsors .sponsor {
   border-bottom: 1px solid #ddd;
 }
+.section-sponsors .sponsor .dst-logo {
+  width: 300px;
+  height: auto;
+}
 @media screen and (max-width: 767px) {
   .section-sponsors .sponsor img {
     width: 85%;
@@ -1102,6 +1106,9 @@ td {
   .section-sponsors .sponsor img.silver {
     width: 40%;
     height: auto;
+  }
+  .section-sponsors .sponsor .dst-logo {
+    width: 60%;
   }
 }
 .section-sponsors .diamond {
