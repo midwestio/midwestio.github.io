@@ -17,7 +17,8 @@
 @grayLighter:           #eee;
 @grayLightest:          #f5f5f5;
 @white:                 #fff;
-
+@links:                 #005CCD;
+@links-hover:           #333;
 
 // Typography
 @baseFontSize:          18px;
@@ -45,6 +46,17 @@
 @grid-gutter-width: 20px; // Spacing betweeen columns
 @grid-margin-width: 20px; // Spacing on outer sides of grid
 
+a {
+  text-decoration: none;
+  color: @links;
+  &:hover {
+    text-decoration: underline;
+    color: @links-hover;
+  }
+  &:visited {
+
+  }
+}
 
 //===============================
 // Sections
@@ -196,6 +208,7 @@ header {
   a {
     &:hover, &.active {
       color: @grayLight;
+      text-decoration: none;
       svg path {
         fill: @grayLight;
       }
@@ -260,6 +273,23 @@ th, td {
 .section-sponsors {
   .sponsor {
     border-bottom: 1px solid #ddd;
+    .dst-logo {
+      width: 300px;
+      height: auto;
+    }
+    @media @small {
+      img {
+        width: 85%;
+        height: auto;
+        &.silver {
+          width: 40%;
+          height: auto;
+        }
+      }
+      .dst-logo {
+        width: 60%;
+      }
+    }
   }
 
   .diamond {
@@ -286,6 +316,43 @@ th, td {
 }
 
 .section-schedule {
+  .schedule-slot {
+    border: 1px solid #ddd;
+
+    @media @small {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .schedule-slot-muted {
+    background-color: #e9e9e9;
+  }
+
+  .schedule-track1 {
+    @media @medium {
+      border-right: 1px solid #ddd;
+    }
+  }
+
+  .schedule-track2 {
+    @media @medium {
+      border-left: 1px solid #ddd;
+    }
+  }
+
+  .schedule-time {
+    margin-top: 10px;
+    display: inherit;
+    text-align: left;
+  }
+
+  .schedule-name {
+    margin-top: 5px;
+    text-align: left;
+    height: 30px;
+  }
+
   .schedule-day {
     .schedule-date {
       margin-top: 20px;
@@ -295,24 +362,76 @@ th, td {
   }
 
   .speaker {
-    margin-bottom: 40px;
-    text-align: left;
+    width: 420px;
+    height: 100px;
+  }
+}
 
-    .speaker-name {
+.speaker {
+  text-align: left;
+  margin: 15px 0;
+
+  .speaker-name {
+    font-weight: bold;
+  }
+
+  .speaker-bio {
+    position: relative;
+    top: 20px;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    box-shadow: -2px 2px 6px #888;
+  }
+}
+
+.sessions {
+  list-style: none;
+  line-height: 25px;
+
+  .session {
+    clear: both;
+    border-bottom: 1px dashed #ccc;
+    margin: 25px 0;
+
+    .schedule-name {
       font-weight: bold;
-      margin-left: 110px;
-      padding-top: 20px;
+      color: @black;
     }
 
-    .speaker-bio {
-      margin-left: 110px;
+    .schedule-abstract {
+      margin: 25px 0;
+      ul {
+        margin-bottom: 10px;
+      }
     }
 
-    img {
-      float: left;
-      height: 100px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
+    .speaker {
+      margin: 25px;
+    }
+
+    .speaker-bio-full {
+      font-style: italic;
+      padding-top: 40px;
+    }
+
+    .session-time {
+      display: none;
+    }
+
+    @media @medium {
+      &:before {
+        display: block;
+        content: " ";
+        margin-top: -100px;
+        height: 100px;
+        visibility: hidden;
+      }
     }
   }
 }

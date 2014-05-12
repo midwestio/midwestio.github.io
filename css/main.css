@@ -456,7 +456,6 @@ table {
 }
 @media screen and (min-width: 768px) {
   .row {
-    margin-left: -20px;
     overflow-x: hidden;
   }
 }
@@ -797,6 +796,14 @@ nav ul li {
 #main {
   background-color: #FFF;
 }
+a {
+  text-decoration: none;
+  color: #005ccd;
+}
+a:hover {
+  text-decoration: underline;
+  color: #333333;
+}
 .section-banner {
   background-color: #000;
   background-position: bottom;
@@ -1032,6 +1039,7 @@ nav ul li {
 header a:hover,
 header a.active {
   color: #999999;
+  text-decoration: none;
 }
 header a:hover svg path,
 header a.active svg path {
@@ -1086,6 +1094,23 @@ td {
 .section-sponsors .sponsor {
   border-bottom: 1px solid #ddd;
 }
+.section-sponsors .sponsor .dst-logo {
+  width: 300px;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .section-sponsors .sponsor img {
+    width: 85%;
+    height: auto;
+  }
+  .section-sponsors .sponsor img.silver {
+    width: 40%;
+    height: auto;
+  }
+  .section-sponsors .sponsor .dst-logo {
+    width: 60%;
+  }
+}
 .section-sponsors .diamond {
   height: 150px;
 }
@@ -1103,26 +1128,101 @@ td {
   padding: 30px;
   width: auto;
 }
+.section-schedule .schedule-slot {
+  border: 1px solid #ddd;
+}
+@media screen and (max-width: 767px) {
+  .section-schedule .schedule-slot {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.section-schedule .schedule-slot-muted {
+  background-color: #e9e9e9;
+}
+@media screen and (min-width: 768px) {
+  .section-schedule .schedule-track1 {
+    border-right: 1px solid #ddd;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-schedule .schedule-track2 {
+    border-left: 1px solid #ddd;
+  }
+}
+.section-schedule .schedule-time {
+  margin-top: 10px;
+  display: inherit;
+  text-align: left;
+}
+.section-schedule .schedule-name {
+  margin-top: 5px;
+  text-align: left;
+  height: 30px;
+}
 .section-schedule .schedule-day .schedule-date {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: left;
 }
 .section-schedule .speaker {
-  margin-bottom: 40px;
-  text-align: left;
-}
-.section-schedule .speaker .speaker-name {
-  font-weight: bold;
-  margin-left: 110px;
-  padding-top: 20px;
-}
-.section-schedule .speaker .speaker-bio {
-  margin-left: 110px;
-}
-.section-schedule .speaker img {
-  float: left;
+  width: 420px;
   height: 100px;
-  -webkit-border-radius: 50%;
+}
+.speaker {
+  text-align: left;
+  margin: 15px 0;
+}
+.speaker .speaker-name {
+  font-weight: bold;
+}
+.speaker .speaker-bio {
+  position: relative;
+  top: 20px;
+}
+.speaker img {
+  float: left;
+  margin-right: 10px;
+  height: 100px;
   border-radius: 50%;
+  border: 2px solid;
+  box-shadow: -2px 2px 6px #888888;
+}
+.sessions {
+  list-style: none;
+  line-height: 25px;
+}
+.sessions .session {
+  clear: both;
+  border-bottom: 1px dashed #ccc;
+  margin: 25px 0;
+}
+.sessions .session .schedule-name {
+  font-weight: bold;
+  color: #000000;
+}
+.sessions .session .schedule-abstract {
+  margin: 25px 0;
+}
+.sessions .session .schedule-abstract ul {
+  margin-bottom: 10px;
+}
+.sessions .session .speaker {
+  margin: 25px;
+}
+.sessions .session .speaker-bio-full {
+  font-style: italic;
+  padding-top: 40px;
+}
+.sessions .session .session-time {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sessions .session:before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+  }
 }
