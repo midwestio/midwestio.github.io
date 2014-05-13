@@ -329,13 +329,13 @@ th, td {
   }
 
   .schedule-track1 {
-    @media @medium {
+    @media not @small {
       border-right: 1px solid #ddd;
     }
   }
 
   .schedule-track2 {
-    @media @medium {
+    @media not @small {
       border-left: 1px solid #ddd;
     }
   }
@@ -436,7 +436,7 @@ th, td {
       display: none;
     }
 
-    @media @medium {
+    @media not @small {
       &:before {
         display: block;
         content: " ";

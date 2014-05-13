@@ -1119,12 +1119,12 @@ td {
 .section-schedule .schedule-slot-muted {
   background-color: #e9e9e9;
 }
-@media screen and (min-width: 768px) {
+@media not screen and (max-width: 767px) {
   .section-schedule .schedule-track1 {
     border-right: 1px solid #ddd;
   }
 }
-@media screen and (min-width: 768px) {
+@media not screen and (max-width: 767px) {
   .section-schedule .schedule-track2 {
     border-left: 1px solid #ddd;
   }
@@ -1213,7 +1213,7 @@ td {
 .sessions .session .session-time {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media not screen and (max-width: 767px) {
   .sessions .session:before {
     display: block;
     content: " ";
