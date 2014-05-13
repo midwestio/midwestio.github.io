@@ -1189,6 +1189,7 @@ td {
 }
 .sessions .session .schedule-abstract {
   margin: 25px 0;
+  text-align: justify;
 }
 .sessions .session .schedule-abstract ul {
   margin-bottom: 10px;
@@ -1207,6 +1208,7 @@ td {
 .sessions .session .speaker-bio-full {
   font-style: italic;
   padding-top: 40px;
+  text-align: justify;
 }
 .sessions .session .session-time {
   display: none;
