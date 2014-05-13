@@ -397,6 +397,7 @@ th, td {
 .sessions {
   list-style: none;
   line-height: 25px;
+  padding: 0 10px;
 
   .session {
     clear: both;
@@ -417,6 +418,12 @@ th, td {
 
     .speaker {
       margin: 25px;
+      @media @small {
+        margin: 10px;
+        img {
+          float: none;
+        }
+      }
     }
 
     .speaker-bio-full {

@@ -1177,6 +1177,7 @@ td {
 .sessions {
   list-style: none;
   line-height: 25px;
+  padding: 0 10px;
 }
 .sessions .session {
   clear: both;
@@ -1195,6 +1196,14 @@ td {
 }
 .sessions .session .speaker {
   margin: 25px;
+}
+@media screen and (max-width: 767px) {
+  .sessions .session .speaker {
+    margin: 10px;
+  }
+  .sessions .session .speaker img {
+    float: none;
+  }
 }
 .sessions .session .speaker-bio-full {
   font-style: italic;
