@@ -52,11 +52,10 @@ audio:not([controls]) {
 html {
   font-family: sans-serif;
   /* 1 */
-
   -webkit-text-size-adjust: 100%;
+  /* 2 */
   -ms-text-size-adjust: 100%;
   /* 2 */
-
 }
 /**
  * Remove default margin.
@@ -211,10 +210,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Correct font family not being inherited in all browsers.
@@ -227,13 +224,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -266,10 +260,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -286,10 +278,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -299,11 +289,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /**
@@ -329,10 +317,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -475,37 +461,37 @@ table {
     float: right;
   }
   .span1 {
-    width: 8.333333333333332%;
+    width: 8.33333333%;
   }
   .span2 {
-    width: 16.666666666666664%;
+    width: 16.66666667%;
   }
   .span3 {
     width: 25%;
   }
   .span4 {
-    width: 33.33333333333333%;
+    width: 33.33333333%;
   }
   .span5 {
-    width: 41.66666666666667%;
+    width: 41.66666667%;
   }
   .span6 {
     width: 50%;
   }
   .span7 {
-    width: 58.333333333333336%;
+    width: 58.33333333%;
   }
   .span8 {
-    width: 66.66666666666666%;
+    width: 66.66666667%;
   }
   .span9 {
     width: 75%;
   }
   .span10 {
-    width: 83.33333333333334%;
+    width: 83.33333333%;
   }
   .span11 {
-    width: 91.66666666666666%;
+    width: 91.66666667%;
   }
   .span12 {
     width: 100%;
@@ -882,22 +868,16 @@ a:hover {
     padding: 20px;
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
     /* FF3.6+ */
-  
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.6)));
     /* Chrome,Safari4+ */
-  
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
     /* Chrome10+,Safari5.1+ */
-  
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
     /* Opera 11.10+ */
-  
     background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
     /* IE10+ */
-  
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 50%);
     /* W3C */
-  
   }
 }
 @media screen and (min-width: 768px) {
@@ -1191,6 +1171,7 @@ td {
 .sessions {
   list-style: none;
   line-height: 25px;
+  padding: 0 10px;
 }
 .sessions .session {
   clear: both;
@@ -1209,6 +1190,14 @@ td {
 }
 .sessions .session .speaker {
   margin: 25px;
+}
+@media screen and (max-width: 767px) {
+  .sessions .session .speaker {
+    margin: 10px;
+  }
+  .sessions .session .speaker img {
+    float: none;
+  }
 }
 .sessions .session .speaker-bio-full {
   font-style: italic;
