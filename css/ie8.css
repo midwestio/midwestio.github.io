@@ -1233,13 +1233,25 @@ header {
   left: 0;
   bottom: auto;
 }
-@media screen and (max-width: 767px) {
-  header {
-    display: none;
-  }
-}
 header h1 {
   float: left;
+}
+header .logo {
+  width: 30px;
+  height: 30px;
+}
+header .logo-alt {
+  display: none;
+}
+header a:hover .logo {
+  display: none;
+}
+header a:hover .logo-alt {
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  position: relative;
+  display: inline;
 }
 nav ul {
   float: right;
@@ -1299,4 +1311,8 @@ nav ul li {
 }
 .span12 {
   width: 100%;
+}
+#about .logo {
+  width: 300px;
+  height: 300px;
 }
