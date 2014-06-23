@@ -1078,6 +1078,10 @@ td {
   width: 300px;
   height: auto;
 }
+.section-sponsors .sponsor .vml-logo {
+  width: 200px;
+  height: auto;
+}
 @media screen and (max-width: 767px) {
   .section-sponsors .sponsor img {
     width: 85%;
@@ -1089,6 +1093,9 @@ td {
   }
   .section-sponsors .sponsor .dst-logo {
     width: 60%;
+  }
+  .section-sponsors .sponsor .vml-logo {
+    width: 20%;
   }
 }
 .section-sponsors .diamond {
