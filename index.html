@@ -41,7 +41,8 @@
         <meta name="msapplication-TileImage" content="apple-touch-icon-144x144-precomposed.png">
         <meta name="msapplication-TileColor" content="#222222">
 
-        <link rel="stylesheet" href="css/main.css">
+        <!--[if lt IE 9]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+        <!--[if ! lte IE 8]><!--><link rel="stylesheet" href="css/main.css"><!--<![endif]-->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -49,6 +50,11 @@
         <header>
             <div class="container">
                <h1><a href="#" data-scroll-goto="0">
+                <!--[if lt IE 9]>
+                <img class="logo" src="/img/ie8-logo-small.png" alt="Midwest.io Logo">
+                <img class="logo-alt" src="/img/ie8-logo-small-grey.png" alt="Midwest.io Logo">
+                <![endif]-->
+                <!--[if ! lte IE 8]><!-->
                 <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                    viewBox="0 0 110.1 110.1" preserveAspectRatio="xMinYMin" xml:space="preserve">
                   <title>Midwest.io Logo</title>
@@ -66,9 +72,10 @@
                         c-12,18-24,36-36,54c-3.1,4.6-6.2,9.3-9.3,13.9c-0.2,0.3-0.9,1.7-1.2,1.7c-4,0-8.1,0-12.1,0c-1.8,0-20.4,0.4-20.4-0.4
                         c0-3,0-6,0-9.1c0-15.6,0-31.3,0-46.9c0-47.9,0-95.7,0-143.6c0-28.6,0-57.2,0-85.9c0-0.3,21.8-0.1,23.7-0.1c0.5,0,8.6,0,8.6,0
                         c0,0.8,0,1.6,0,2.4c0,13.7,0,27.5,0,41.2c0,47.1,0,94.2,0,141.2c0,15.6,0,31.1,0,46.7c19.5-28.7,39.1-57.5,58.6-86.2
-                        C322.7,179.1,337.9,156.8,353.1,134.5z"/>
+                        C322.7,179.1,337.9,156.8,353.1,134.5z"></path>
                     </g>
                 </svg>
+                <!--<![endif]-->
                 Midwest.io</a></h1>
                <nav>
                  <ul>
@@ -90,9 +97,12 @@
                 <div class="container">
                   <div class="row row-flipped" >
                     <div class="span7">
+                      <!--[if lt IE 9]><img class="logo" src="/img/ie8-logo.png" alt="Midwest.io Logo"><![endif]-->
+                      <!--[if ! lte IE 8]><!-->
                       <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 110.1 110.1" preserveAspectRatio="xMinYMin" xml:space="preserve">
                         <use xlink:href="#mwlogo"></use>
                       </svg>
+                      <!--<![endif]-->
                       <span class="h1-2x text-lite">MIDWEST.IO</span>
                     </div>
                     <div class="span5">
@@ -650,7 +660,8 @@
                       || navigator.userAgent.match(/BlackBerry/i)
                       || navigator.userAgent.match(/Windows Phone/i)
                       || navigator.userAgent.match(/Opera Mini/i)
-                      || navigator.userAgent.match(/IEMobile/i),
+                      || navigator.userAgent.match(/IEMobile/i)
+                      || !Modernizr.mq('only all'),
                 nope : 'js/jquery.stellar.min.js',
                 complete : function () {
                     $.stellar && $.stellar({
