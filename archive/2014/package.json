@@ -1,0 +1,8 @@
+{
+  "name": "midwestio.github.io",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-responsive-images": "0.1.1"
+  }
+}

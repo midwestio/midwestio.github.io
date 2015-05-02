@@ -1,0 +1,142 @@
+// Typography
+// ==================================================
+body {
+  margin: 0;
+  font-family: @baseFontFamily;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @textColor;
+
+  @media @small {
+    font-size: @baseFontSize * .8;
+  }
+}
+
+
+// Headings
+// --------------------------------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  color: @headingsColor;
+  font-family: @headingsFontFamily;
+  font-weight: @headingsFontWeight;
+  margin: 0 0 @baseLineHeight / 2;
+  text-rendering: optimizelegibility;
+}
+
+// Heading Line Heights
+// --------------------------------------------------
+
+h1, h2, h3, .h1, .h2, .h3 { line-height: 1.1em; }
+h4, h5, h6, .h4, .h5, .h6 { line-height: 20px; }
+
+// Heading Sizes
+// --------------------------------------------------
+
+h1, .h1 { .textsize1(); } // 30px
+h2, .h2 { .textsize2(); } // 24px
+h3, .h3 { .textsize3(); } // 20px
+h4, .h4 { .textsize4(); } // 18px
+h5, .h5 { .textsize5(); } // 16px
+h6, .h6 { .textsize6(); } // 14px
+
+.h1-2x { .textsize1(2); line-height: 1.1em; } // 60px
+.h2-2x { .textsize2(2); line-height: 1.1em; } // 48px
+.h3-2x { .textsize3(2); line-height: 1.1em;} // 40px
+.h4-2x { .textsize4(2); line-height: 36px; } // 36px
+.h5-2x { .textsize5(2); line-height: 32px; } // 32px
+.h6-2x { .textsize6(2); line-height: 28px;} // 28px
+
+
+@media @small {
+  .h1-2x { .textsize1(); }
+  .h2-2x { .textsize2(); }
+  .h3-2x { .textsize3(); }
+  .h4-2x { .textsize4(); }
+  .h5-2x { .textsize5(); }
+  .h6-2x { .textsize6(); }
+}
+
+
+// Type Spacing Classes
+// --------------------------------------------------
+
+.text-lead { .spaced(2.5); }
+
+.text-centered { text-align: center; }
+
+// Type Emphasis Classes
+// --------------------------------------------------
+
+.text-soft { color: #6B6B6B; }
+
+.text-dark { color: lighten(@baseTextColor, 20%); }
+
+.text-darker { color: lighten(@baseTextColor, 10%); }
+
+.text-inverse { color: #fff; }
+
+.text-medium { font-weight: 400; }
+
+.text-heavy { font-weight: 700; }
+
+.text-lite { font-weight: 200; }
+
+.text-standout { color: @grayDark; }
+
+.text-small {
+  font-size: 87.5%;
+  line-height: 1.2;
+}
+
+// Used for sidebar headings which have a unique visual style
+.text-mini {
+  .text-soft;
+  border-bottom: 1px solid #cdcdcd;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.text-mini-alt {
+  .text-mini;
+  margin-left: 10px;
+  text-indent: 12px;
+}
+
+// Not sure if used in patient portal, should be replaced with .text-soft class
+.muted {
+  color: @grayLight;
+}
+
+// Screen Reader Text
+// --------------------------------------------------
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// General Type
+// --------------------------------------------------
+
+p { margin: 0 0 @baseLineHeight / 2; }
+
+small { font-size: 85%; } // Ex: 14px base font * 85% = about 12px
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+cite { font-style: normal; }
+
+// Abbreviations and acronyms
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted @grayLight;
+}
