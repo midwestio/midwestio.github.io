@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Midwest.io Sessions</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!--[if lt IE 9]><link rel="stylesheet" href="../css/ie8.css"><![endif]-->
+    <!--[if ! lte IE 8]><!--><link rel="stylesheet" href="../css/main.css"><!--<![endif]-->
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><a href="../" data-scroll-goto="0">
+          <!--[if lt IE 9]>
+          <img class="logo" src="../img/ie8-logo-small.png" alt="Midwest.io Logo">
+          <img class="logo-alt" src="../img/ie8-logo-small-grey.png" alt="Midwest.io Logo">
+          <![endif]-->
+          <!--[if ! lte IE 8]><!-->
+          <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             viewBox="0 0 110.1 110.1" preserveAspectRatio="xMinYMin" xml:space="preserve">
+            <title>Midwest.io Logo</title>
+            <g id="mwlogo" transform="matrix(0.264901 0 0 0.264901 0 0)">
+              <path fill="#FFFFFF" d="M353.1,134.5c1.9-0.5,2.4,1.1,3.3,2.4c1.9,2.7,3.7,5.4,5.6,8.2c6.1,9,12.3,18,18.4,27
+                c11.1,16.3,22.3,32.7,33.4,49c0.4,0.5,0.7,1.1,1.1,1.6c5-69.2-25.6-137.5-80.7-179.8C278.6,0.2,203.1-11.5,137.1,12.3
+                c-33,11.9-62.7,32.3-85.8,58.7c-11.5,13.2-21.4,27.8-29.2,43.4c-1.9,3.8-3.7,7.6-5.4,11.5c-0.8,2-1.6,3.9-2.4,5.9
+                c-0.3,0.7-2.2,4.5-1.9,5c1,1.5,2,3,3,4.5c15.7,23.5,31.4,47.1,47.1,70.6c19.2-28.8,38.5-57.6,57.7-86.5c12-18,24-36,36-54
+                c3.1-4.6,6.2-9.3,9.3-13.9c0.2-0.3,0.9-1.7,1.2-1.7c4,0,8.1,0,12.1,0c1.8,0,20.4-0.4,20.4,0.4c0,3,0,6,0,9.1
+                c0,15.6,0,31.3,0,46.9c0,47.9,0,95.7,0,143.6c0,28.6,0,57.2,0,85.9c0,0.3-21.8,0.1-23.7,0.1c-0.5,0-8.6,0-8.6,0
+                c0-0.8,0-1.6,0-2.4c0-13.7,0-27.5,0-41.2c0-47.1,0-94.2,0-141.2c0-15.6,0-31.1,0-46.7c-19.5,28.7-39.1,57.5-58.6,86.2
+                c-12,17.6-24,35.3-36,52.9c-2.9,4.3-5.8,8.6-8.8,12.9c-2.1,3.1-3.8-0.8-5.1-2.8C39.9,232,21.1,204.4,2.3,176.9
+                c-10.5,70.4,16.4,142.6,70.5,188.9c52.9,45.2,126.8,61,193.6,41.4c67.1-19.7,121.1-73.8,140.7-140.9c-0.2-1-1.7-2.6-2.3-3.4
+                c-2-3-4-6.1-6.1-9.1c-6.1-9.2-12.3-18.4-18.4-27.6c-8.9-13.4-17.9-26.8-26.8-40.1c-19.2,28.8-38.5,57.6-57.7,86.5
+                c-12,18-24,36-36,54c-3.1,4.6-6.2,9.3-9.3,13.9c-0.2,0.3-0.9,1.7-1.2,1.7c-4,0-8.1,0-12.1,0c-1.8,0-20.4,0.4-20.4-0.4
+                c0-3,0-6,0-9.1c0-15.6,0-31.3,0-46.9c0-47.9,0-95.7,0-143.6c0-28.6,0-57.2,0-85.9c0-0.3,21.8-0.1,23.7-0.1c0.5,0,8.6,0,8.6,0
+                c0,0.8,0,1.6,0,2.4c0,13.7,0,27.5,0,41.2c0,47.1,0,94.2,0,141.2c0,15.6,0,31.1,0,46.7c19.5-28.7,39.1-57.5,58.6-86.2
+                C322.7,179.1,337.9,156.8,353.1,134.5z"/>
+            </g>
+          </svg>
+          <!--<![endif]-->
+          Midwest.io</a></h1>
+         <nav>
+           <ul>
+             <li><a href="../#" data-scroll-nav="0">About</a></li>
+             <li><a href="../#register" data-scroll-nav="1">Register</a></li>
+             <li><a href="../#schedule" data-scroll-nav="2">Schedule</a></li>
+             <li><a href="../#venue" data-scroll-nav="3">Venue</a></li>
+             <li><a href="../#sponsors" data-scroll-nav="4">Sponsors</a></li>
+             <li><a href="../#contact" data-scroll-nav="5">Contact</a></li>
+           </ul>
+         </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <h1 class="h1-2x text-standout padded-heading">Sessions</h1>
+
+        <h3 class="h3-2x text-standout padded-heading">Monday, July 14th</h3>
+
+        <ol class="sessions">
+          <li class="session" id="monday-keynote">
+            <div class="session-time">9:00am</div>
+            <div class="schedule-name">Mission Critical Innovation</div>
+            <div class="schedule-abstract"></div>
+            <div class="speaker">
+              <img src="../img/speakers/jeff-norris.jpg" alt="Dr. Jeff Norris">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/DrJeffNorris">Dr. Jeff Norris</a></div>
+              <div class="speaker-bio">Mission Operations Innovations Lead</div>
+              <div class="speaker-bio"><a href="http://www.jpl.nasa.gov/">NASA JPL</a></div>
+              <div class="speaker-bio-full">Dr. Jeff Norris is the Mission Operations Innovation Lead at the NASA Jet Propulsion Laboratory, where he leads a variety of projects focused on transformational advancement in systems for the control of spacecraft and robots.  Jeff also founded and leads the JPL Ops Lab, an advanced facility for the design and development of mission-critical software and human-robot interaction technologies.  Previously, he led the development of control tools for the Spirit, Opportunity, and Curiosity Mars Rover missions.  Jeff was awarded the 2009 Lew Allen Award for Excellence and the 2004 NASA Software of the Year Award, NASA's highest software honor.  He received Bachelor's and Masters degrees in Computer Science from MIT and a Ph.D. in Computer Science from the University of Southern California.</div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-1a">
+            <div class="session-time">10:00am</div>
+            <div class="schedule-name">Lightning fast mobile development at scale</div>
+            <div class="schedule-abstract">
+              <p>In this talk, I will present detailed technical descriptions of specific processes we have developed for extremely fast client and server side mobile development at the scale of LinkedIn.
+              </p>
+              <ul>
+              <li>Fast build, develop, test, release and monitor processes</li>
+              <li>Screen based JSON for client side rendering and effortless server controlled A/B testing and bug fixes across multiple mobile platforms</li>
+              <li>Screen based automation testing on the client for automated release validation</li>
+              <li>Client side feature flag based trunk development model</li>
+              <li>Train model based release process for native apps</li>
+              <li>Fast and reliable VCR based route tests on the server (commit to production within hours)</li>
+              <li>Automated monitoring like crash log analysis and staged rollouts across dimensions like client/os versions</li>
+              </ul>
+              <p>Most of the processes I will talk about will have live demos or sample code. All of them are currently used in production and I will have real-world examples/statistics to back up my material. I believe that attendees will walk out of this session armed with practical solutions to most of the major hurdles that large scale mobile development involves. LinkedIn is one of the biggest mobile deployments and I want to share our techniques that we have refined in the last two years that can benefit the community at large. This session is targeted to mobile engineers/developers in small to mid-size establishments who are rapidly growing their mobile presence on any mobile platform.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/akhilesh-gupta-small.jpg" alt="Akhilesh Gupta">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/agupta03">Akhilesh Gupta</a></div>
+              <div class="speaker-bio">Senior Software Engineer</div>
+              <div class="speaker-bio"><a href="https://www.linkedin.com/">LinkedIn</a></div>
+              <div class="speaker-bio-full">
+                <p>Akhilesh has been leading the server team for LinkedIn Mobile (iOS, Android, Touch) for the past two years. He is responsible for designing and implementing a lot of the server side architecture for the LinkedIn mobile apps. He holds a Masters degree in CS from Stanford University.</p>
+                <p>You can view more on his <a href="http://www.linkedin.com/in/guptaakhilesh">LinkedIn profile</a>.</p>
+              </div>
+            </div>
+
+          </li>
+          <li class="session" id="monday-1b">
+            <div class="session-time">10:00am</div>
+            <div class="schedule-name">Adding Static Type Checking to a Dynamic Language</div>
+            <div class="schedule-abstract">
+              <p>Julia is a new dynamically-typed language for technical computing. While it uses types for many things, type checking is not one of them. TypeCheck.jl is a Julia package for when you want static type checking; it collects static-analysis functions that look for common problems in your code: problems that can cause run-time errors or reduced efficiency. TypeCheck.jl's type analysis uses the compiler's type-inference, so it's never out of sync with how your code is being compiled.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/leah-hanson-small.jpg" alt="Leah Hanson">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/astrieanna">Leah Hanson</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="https://www.google.com/">Google</a></div>
+              <div class="speaker-bio-full">
+                <p>Leah is a software engineer at Google. She spent the Spring of 2013 at <a href="http://www.hackerschool.com/">Hacker School</a>, where she started learning <a href="http://julialang.org/">Julia</a> and wrote <a href="https://github.com/JuliaLang/WebSockets.jl">WebSockets.jl</a>. The rest of her year was spent writing Julia code, including <a href="https://github.com/astrieanna/TypeCheck.jl">TypeCheck.jl</a>. She has presented 3 hour Intro to Julia workshops at LambdaJam, Strange Loop, and Strata NYC.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-2a">
+            <div class="session-time">11:00am</div>
+            <div class="schedule-name">A New Type of PHP: HHVM and Hack</div>
+            <div class="schedule-abstract">
+              <p>When Facebook needed to scale millions of lines of legacy PHP code, rewriting everything in another language wasn't an option. Instead, they created the HHVM JIT compiler, and the HipHop PHP-to-C++ compiler before it, as drop-in replacements for the standard PHP interpreter. As an open-source project, HHVM has matured considerably over the past year and has now become a viable option for use outside of Facebook. However, the goal wasn't just to make PHP run faster. In March, Facebook open-sourced Hack, a reimagined version of PHP with a host of features borrowed from other languages (e.g. explicit typing, first-class collections, generics, and async capabilities). This session will take a look at what HHVM and Hack bring to the table for those working with PHP today.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/jeremy-mikola-small.jpg" alt="Jeremy Mikola">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/jmikola">Jeremy Mikola</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="https://www.mongodb.com/">MongoDB</a></div>
+              <div class="speaker-bio-full">
+                <p>Jeremy Mikola is a software engineer at MongoDB's NYC office. As a member of the driver and evangelism team, he helps develop the PHP driver and contributes to various OSS projects, such as Doctrine ODM, Symfony2 and Zend Framework. Previously, Jeremy helped build great things with Symfony2, MongoDB, and a handful of other interesting technologies at OpenSky and Exercise.com. Jeremy lives in Hoboken, NJ and is known to enjoy a good sandwich.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-2b">
+            <div class="session-time">11:00am</div>
+            <div class="schedule-name">Simplifying Big Data with Apache Crunch</div>
+            <div class="schedule-abstract">
+              <p>The MapReduce framework is a proven method for processing large volumes of data but even simple problems require expertise. Tackling the learning curve for Big Data and efficient processing is a daunting task for developers just getting started. The Apache Crunch project helps to break down complex processing problems into simple concepts which can be utilized on industry standard frameworks such as Hadoop and Spark. Apache Crunch is being used as an integral part of building processing pipelines for healthcare data allowing for quick development of new solutions and architectures. The talk will also cover how the core concepts of Apache Crunch enable first class integration, rapid scaling of development across teams, and development of extensible processing infrastructure.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/micah-whitacre-small.jpg" alt="Micah Whitacre">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/mkwhit">Micah Whitacre</a></div>
+              <div class="speaker-bio">Committer</div>
+              <div class="speaker-bio"><a href="http://crunch.apache.org/">Apache Crunch</a></div>
+              <div class="speaker-bio-full">
+                <p>Micah is a committer and PMC member on the Apache Crunch project. For almost a decade he has worked on building infrastructure and reusable assets for building a variety of cloud solutions. In the last few years his focus has shifted towards enabling the adoption of scalable technologies to build infrastructure for ingestion of and efficient processing in both a batch and near real time environment.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-3a">
+            <div class="session-time">12:00pm</div>
+            <div class="schedule-name">Keeping Your Edge by Deploying Faster</div>
+            <div class="schedule-abstract">
+              <p>Our deployment infrastructure must keep pace with our business. Users expect rapid innovation and quick response to bugs or they seek out alternatives, especially on the web. The product team at our company deploys ten or more times a day, but that’s not fast enough. For us, faster deploys mean faster innovation. We tweak and deploy new features repeatedly, searching for the solution that users will love. In response, our foundation team designed and rolled out a new system that reduces deployment time by 80% and eliminates wait time while also making it safer.</p>
+              <p>In this session, I'll talk specifically about how we broke our monolithic application into multiple, smaller services allowing simultaneous deployments and nearly instantaneous rollbacks when necessary. I’ll also detail the technologies we rely on, the components we built ourselves, and the challenges we encountered along the way so you can learn from our missteps. If you're interested in increasing the delivery speed of your organization, find your inspiration here!</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/tyson-stewart-small.jpg" alt="Tyson Stewart">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/tysonj">Tyson Stewart</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.hudl.com/">Hudl</a></div>
+              <div class="speaker-bio-full">
+                <p>Tyson is a software engineer at Hudl where he currently leads the DevTools squad, a group focused on making development more enjoyable and deployment faster, safer, and with better feedback.He has years of experience developing and operating web applications, especially in Amazon Web Services. He is highly proficient in C# and JavaScript, but his latest favorite language is Go.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-3b">
+            <div class="session-time">12:00pm</div>
+            <div class="schedule-name">SMACSS Your Sass Up</div>
+            <div class="schedule-abstract">
+              <p>I often ask myself these questions: Will this code be easy for the others to edit? Does it scale? Can I forget it and change it later without being lost?</p>
+              <p>While Scalable and Modular Architecture for CSS (SMACSS) is just one methodology, the principals of modular CSS are applicable to sites large and small. Using a modular approach in tandem with Sass can greatly improve development efficiency and project maintenance. I'll discuss specific techniques, such as selector inheritance and interpolation, that can greatly reduce the amount of code written. Your code will be more portable, making it easier to use code on other projects.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/mina-markham-small.jpg" alt="Mina Markham">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/minamarkham">Mina Markham</a></div>
+              <div class="speaker-bio">Developer &amp; Designer</div>
+              <div class="speaker-bio"><a href="http://www.parago.com/">Parago</a></div>
+              <div class="speaker-bio-full">
+                <p>Mina Markham is a Sass-lovin' UI developer/designer in Dallas, Texas. She recently founded the Dallas chapter of Girl Develop It, and also teaches for Black Girls Code. As a developer at Parago, she specializes in building responsive websites and modular CSS architecture. Mina has presented at various conferences and events, including Front-End Design Conference, Front Porch and Passion Projects. When she's not crafting sites or teaching others, Mina is probably in her kitchen baking something chocolatey.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-4a">
+            <div class="session-time">1:00pm</div>
+            <div class="schedule-name">iBeacons, Passbook and the real augmented reality</div>
+            <div class="schedule-abstract">
+              <p>Ten years ago technology was advancing to allow developers to create applications that ran from the palm of their user's hands.</p>
+              <p>Now, these mobile devices are on a collision course with every aspect of everyday life. This intersection won't happen overnight. It also won't happen with devices held in front of the face with overlays over live pictures. Instead it will be much more subtle and more gradual.</p>
+              <p>Learn more about two technologies Apple is using to lay the foundation for this reality in recent iOS releases. How can you take advantage of them? What do these and other technologies mean for you and your apps even if you aren't an iOS developer?</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/matt-klosterman-small.jpg" alt="Matt Klosterman">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/IfMatt">Matt Klosterman</a></div>
+              <div class="speaker-bio">iOS Developer</div>
+              <div class="speaker-bio"><a href="http://infofission.com/">Infofission</a></div>
+              <div class="speaker-bio-full">
+                <p>Matt Klosterman is an independent iOS developer in the Dallas-Fort Worth area. Matt got his first taste of mobile development in 2004 on a groundbreaking project that allowed storm chasers to send real-time severe weather pictures and video to a television broadcast.</p>
+                <p>Since then, Matt has focused on working on projects that use mobile devices to make a serious impact in the lives of their users. Recently, Matt consulted as the technical lead on a large iOS app featured as a day-one implementation of Passbook in 2012 and as one of the “Best New Apps” that accompanied the release of iOS 7 in 2013.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-4b">
+            <div class="session-time">1:00pm</div>
+            <div class="schedule-name">Composing Test Generators</div>
+            <div class="schedule-abstract">
+              <p>We don't like testing CRUD APIs, but if we must, we generate them! In this talk, I’ll cover writing generators that produce test requests and responses based on data-types we're familiar with, such as Ints, Strings, Maps, Keywords, as well as on custom types that reflect our domain (e.g. county-codes, email-addresses, partial-required's). I'll focus on how we implement Clojure's test.check, a property-based testing tool inspired by <a href="http://www.cs.tufts.edu/~nr/cs257/archive/john-hughes/quick.pdf">QuickCheck</a> to produce randomized data for changing and newly-created inputs, as well as simulating requests with dynamic parameters (e.g. for search or collection filtering).</p>
+              <p>You’ll learn about converting <a href="https://github.com/prismatic/schema">Prismatic schema</a> validation maps into variable sample data by way of injecting constraints and composing the results of basic generators with more novel ones throughout the test-generation process. I will show examples that demonstrate how granular these property-tests can become and how easily we can automate an exhausting, data-specific process.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/zeeshan-lakhani-small.jpg" alt="Zeeshan Lakhani">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/zeeshanlakhani">Zeeshan Lakhani</a></div>
+              <div class="speaker-bio">Programmer</div>
+              <div class="speaker-bio"><a href="http://www.arc90.com/">Arc90/SFX</a> and <a href="https://github.com/papers-we-love/papers-we-love">Papers We Love</a></div>
+              <div class="speaker-bio-full">
+                <p>Zeeshan became a programmer by way of film and music recording/technology. Moving from science center to startup to labs to EDM platform research, he accrued tons of necessary and needless information, and is a polyglot who will dive into anything related to programming languages, particularly functional ones, machine learning, and math. Additionally, he is one of the lead organizers and founders of Papers We Love!</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-5a">
+            <div class="session-time">2:00pm</div>
+            <div class="schedule-name">Microclients for Microservices</div>
+            <div class="schedule-abstract">
+              <p>"Microservice" is a term that has started popping up as a way to describe loosely coupled systems made of many small applications. While the general ideas of SOA aren't new, recent activity has pushed them towards ever smaller services with smaller, simpler interfaces—often JSON over HTTP in the REST or hypermedia model.</p>
+              <p>This talk will cover best practices for building microclients for these microservices, focusing in particular on leveraging the hypermedia model and some of the neglected parts of REST. The examples for this talk will be in Ruby, but the design principles are widely applicable, and HTTP is HTTP no matter where you program.</p>
+              <p>Writing servers is only half the battle to make the microservice model work. We need great clients too.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/daniel-luxemburg-small.jpg" alt="Daniel Luxemburg">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/dluxemburg">Daniel Luxemburg</a></div>
+              <div class="speaker-bio">CTO</div>
+              <div class="speaker-bio"><a href="http://bandwagon.io/">Bandwagon</a></div>
+              <div class="speaker-bio-full">
+                <p>Daniel Luxemburg is CTO at Bandwagon, a taxi sharing startup based in Brooklyn. Daniel has been working on location-aware web and mobile applications for the past five years. Prior to that, he worked as a consultant on emerging technology trends for clients including Fortune 500 companies and federal agencies. In his spare time he enjoys restoring old computers, playing with new types of hardware, and reading books.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-5b">
+            <div class="session-time">2:00pm</div>
+            <div class="schedule-name">Leveraging the Free Monad</div>
+            <div class="schedule-abstract">
+              <p>In functional programming, one of the key abstractions is the monad. If you strip a monad down to the bare minimum, you get the Free Monad.</p>
+              <p>This talk will show you how to use the Free Monad to implement 'instant' DSL's and separate the pure from the impure parts of your code. In the process, you'll see how to implement an HTML templating library in 15 lines of code and other wonders.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/jim-duey-small.jpeg" alt="Jim Duey">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/jimduey">Jim Duey</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.clojure.net/">Clojure.net</a></div>
+              <div class="speaker-bio-full">
+                <p>Jim is a long time programmer who discovered Clojure and functional programming about 6 years ago. Before that, he developed software in a variety of industries for applications like; industrial process control, digital audio, weather telemetry, digital video and telecom infrastructure. He currently works for ViaSat to help bring satellite broadband to home users. His blog is at <a href="http://clojure.net">http://clojure.net</a>.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-6a">
+            <div class="session-time">3:00pm</div>
+            <div class="schedule-name">To the Moon and Back: Taking the Leap Towards Solving Big Problems</div>
+            <div class="schedule-abstract">
+              <p>President John F. Kennedy was a visionary. In 1962, he proposed the seemingly impossible challenge of walking on the Moon. On July 20, 1969, that challenge became a reality. It was a moment in our history that propelled us into moving beyond our self-imposed limitations of what we, as human beings, are capable of doing.</p>
+              <p>Today, we see how this vision of space travel has affected our love and work on technology. Our multiple devices and subscriptions guide us through our daily lives, which has changed the way we see our world.</p>
+              <p>But how does this love for technology propel us forward to solve the most difficult problems we face as a society: ever growing issues, such as hunger, poverty, climate change, social inequality and injustice?</p>
+              <p>This talk reflects upon where we are as technologists, where we have been and how we can start focusing again on solving hard problems. We’ll go over ways attendees can contribute their talents, gifts and ideas to varying initiatives around the globe which are taking on these challenging issues.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/julia-elman-small.jpg" alt="Julia Elman">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/juliaelman">Julia Elman</a></div>
+              <div class="speaker-bio">Developer &amp; Designer</div>
+              <div class="speaker-bio"><a href="http://theironyard.com/">The Iron Yard</a></div>
+              <div class="speaker-bio-full">
+                <p>Julia Elman is a designer, developer and tech education advocate based in North Carolina. She has been working her brand of web skills since 2002. Her creative nature drove her to find work at Hallmark Cards, Inc in 2007 where she worked on projects such as the Product (RED) campaign and Hallmark’s site re-design. From there, she took a dive into Django as a Junior Designer/Developer at World Online in Lawrence, KS. She is currently working on a book for O'Reilly Media on advanced techniques for Django, a Python web framework.</p>
+                <p>In early 2013, she helped start a local chapter of Girl Develop It and empowered over 600 members to learn computer programming. She also helped organize the 2013 Teen Tech Camp, where 20 local teens learned Python programming in a one-day event. Julia is the Front End Engineering Instructor at The Iron Yard school in Durham, NC. You can follow her @juliaelman.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-6b">
+            <div class="session-time">3:00pm</div>
+            <div class="schedule-name">Erlang, or How I Learned to Stop Worrying and Let Things Fail</div>
+            <div class="schedule-abstract">
+              <p>One doesn't have to participate in language wars to acknowledge that all languages are not created equal. Each has different strengths and weaknesses, but more importantly, certain languages are far enough removed from mainstream software development that learning them can open one's eyes to new ways of solving problems.</p>
+              <p>Erlang has several unusual features which collectively form a unique platform, one that excels at backend server software and distributed computing. This talk will not dwell on syntax; what's far more interesting is the Erlang Weltanschauung.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/john-daily-small.jpg" alt="John Daily">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/macintux">John Daily</a></div>
+              <div class="speaker-bio">Technical Evangelist</div>
+              <div class="speaker-bio"><a href="http://www.basho.com/">Basho</a></div>
+              <div class="speaker-bio-full">
+                <p>John Daily continues to chase a decades-long dream of doing full-time software development with detours through systems and network administration, global iOS mobile device management, and now technical evangelism for Basho. He has a passion for pragmatic programming languages such as C, Perl, and Erlang. Beauty is definitely in the eye of the beholder.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-7a">
+            <div class="session-time">4:00pm</div>
+            <div class="schedule-name">Frontend Performance Beginner to Expert to Crazy Person</div>
+            <div class="schedule-abstract">
+              <p>The very first requirement of a great user experience is actually getting the bytes of that experience to the user before they they get fed up and leave.</p>
+              <p>In this talk we'll start with the basics and get progressively insane. We'll go over several frontend performance best practices, a few anti-patterns, the reasoning behind the rules, and how they've changed over the years. We'll also look at some great tools to help you.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/philip-tellis-small.jpg" alt="Philip Tellis">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/bluesmoon">Philip Tellis</a></div>
+              <div class="speaker-bio">Chief Architect</div>
+              <div class="speaker-bio"><a href="http://www.soasta.com/">SOASTA</a></div>
+              <div class="speaker-bio-full">
+                <p>Philip Tellis is a geek who likes to make the computer do his work for him. As Chief Architect and Rum Distiller at SOASTA, Inc, he analyses the impact of various design decisions on web application performance, scalability and security. He is also the lead developer of "boomerang" -- a JavaScript based web performance measurement tool, and contributed to YSlow while working in Yahoo!'s Exceptional Performance group.</p>
+                <p>In his spare time, Philip enjoys cycling, reading, cooking and learning spoken languages.</p>
+                <p>Philip has spoken at several conferences in the past, including FOSS.IN, FREED.IN, Ubuntulive, Linux Symposium, PHP Quebec, ConFoo, FOSDEM, IPC, WebDU, Velocity and JSConf. He also writes for Smashing Magazine, blogs at http://tech.bluesmoon.info/ and is @bluesmoon on twitter.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="monday-7b">
+            <div class="session-time">4:00pm</div>
+            <div class="schedule-name">MythBashers: Adventures in Overlooked Technologies</div>
+            <div class="schedule-abstract">
+              <p>A big part of my joy in coding is getting to play with cool toys. But sometimes in my eagerness to use the coolest toys, I overlook tools that are right in front of me. In this session, we'll take a second look at a tool that most programmers probably have at least a passing familiarity with: Bash. We'll push it to its limits, and beyond, all in the name of science... and fun!</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/avdi-grimm-small.jpg" alt="Avdi Grimm">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/avdi">Avdi Grimm</a></div>
+              <div class="speaker-bio">Hacker</div>
+              <div class="speaker-bio"><a href="http://www.rubytapas.com/">Ruby Tapas</a> and <a href="http://rubyrogues.com/">Ruby Rouges</a></div>
+              <div class="speaker-bio-full">
+                <p>Hacker, head chef at RubyTapas.com, and a Ruby Rogue.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <h3 class="h3-2x text-standout padded-heading">Tuesday, July 15th</h3>
+
+        <ol class="sessions">
+          <li class="session" id="tuesday-keynote">
+            <div class="session-time">9:00am</div>
+            <div class="schedule-name">Robots, JavaScript, and Drones: Welcome to the Hardware Revolution</div>
+            <div class="schedule-abstract">
+              <p>In August 2012 the New York Times proclaimed there is a "A Hardware Renaissance in Silicon Valley." 16 months later Amazon announced "delivery by drone" in the not-too-distant future (publicity stunt or not).</p>
+              <p>As the barriers in both cost and access to hardware come down, you don't have to be an electrical or mechanical engineer to understand how to wire up a circuit board. We see everyone from kids to artists to web developers building on top of Arduino and Raspberry Pi, making everything from intricate light-up clothing to home automation systems. So what does all this mean for the future of hardware? And how will it impact all us software people?</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/julia-grace.jpg" alt="Julia Grace">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/jewelia">Julia Grace</a></div>
+              <div class="speaker-bio">Head of Engineering</div>
+              <div class="speaker-bio"><a href="https://www.tindie.com/">Tindie</a></div>
+              <div class="speaker-bio-full">Julia is the Head of Engineering at <a href="https://www.tindie.com/">Tindie</a> where she built the engineering team and still writes Python (and the occasional JavaScript) every day. In her prior lives she was CTO of a 500 Startups company, Product Manager at a mid-stage startup, and Research Engineer at part of one of the world's top User Experience Research groups at IBM Almaden Research. She hold a BS and MS in Computer Science with a focus on distributed systems. She spends her "free time" half-marathon running, hacking on her army of Arduinos and sits on the board of the <a href="http://www.computerhistory.org/">Computer History Museum</a></div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-1a">
+            <div class="session-time">10:00am</div>
+            <div class="schedule-name">On the Edge of Hypermedia</div>
+            <div class="schedule-abstract">
+              <p>Stateless.. Nouns &amp; Verbs.. Idempotent.. HTTP Auth.. Tokens.. We’ve all heard those phrases thrown around when we talk about REST. We’ve been told our systems have to include these characteristics or they’re not RESTful. We’ve talked over and over again on how to implement them. Unfortunately, somewhere along the way, we lost the answer to “why?” What’s the point? What value do we gain by doing things the “right” way?</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/keith-casey-small.jpeg" alt="Keith Casey">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/CaseySoftware">Keith Casey</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://caseysoftware.com/">Casey Software</a></div>
+              <div class="speaker-bio-full">
+                <p>Keith Casey, a recovering Developer Evangelist for Twilio, currently serves as an API Designer working to make APIs more consistent, easier, and help solve real world problems. In his spare time, he is a core contributor to web2project, works to build and support the Austin technology community, blogs occasionally at CaseySoftware.com and is completely fascinated by monkeys. He's also the author of the upcoming book <a href="https://leanpub.com/restful-api-design">A Pragmatic Approach to API Design"</a> from Leanpub.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-1b">
+            <div class="session-time">10:00am</div>
+            <div class="schedule-name">Rules as a Control Structure</div>
+            <div class="schedule-abstract">
+              <p>Rule engines draw love-or-hate reactions. They can simplify the expression of arbitrary business rules, but run into limits when more sophisticated logic is needed. While we can also author such logic in a general purpose language, even good functional or object-oriented practices get bogged down when sharing lots of frequently changing and intermingled data. This talk attempts to address the problem by viewing rules as a type of control structure.</p>
+              <p>Rather than authoring rules in a limited mini language, we approach business logic declaratively in a host language with all language features available when needed. We’ll show how this can simplify logic for many problems, untangling tightly coupled functions into independent rules. From there we demonstrate Clara, an implementation of this pattern in Clojure. Finally, we’ll show how this enables visualization of our business logic for review and refinement by domain experts.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/ryan-brush-small.jpg" alt="Ryan Brush">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/ryanbrush">Ryan Brush</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.toomuchcode.org/">Too Much Code</a></div>
+              <div class="speaker-bio-full">
+                <p>Ryan works on systems to bring together and make sense of the world's health data. This starts with scalable processing and analysis of health data, a topic on which Ryan has spoken at ApacheCon and Hadoop World. More recently Ryan has been focused on expressing expert knowledge which includes building Clara, an open source rule engine in Clojure.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-2a">
+            <div class="session-time">11:00am</div>
+            <div class="schedule-name">Building a Production Machine Learning Infrastructure</div>
+            <div class="schedule-abstract">
+              <p>Cloudera's Data Science Team has a simple mission: build an analytics infrastructure so awesome that it makes Google's Ads Quality Team seethe with jealousy. To that end, I'll give an overview of Cloudera's current data science tools, including Oryx and Spark for building and serving machine learning models, Gertrude for multivariate testing, and Impala for ludicrously high-performance SQL queries against HDFS.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/josh-wills-small.jpg" alt="Josh Wills">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/josh_wills">Josh Wills</a></div>
+              <div class="speaker-bio">Sr Director of Data Science</div>
+              <div class="speaker-bio"><a href="http://www.cloudera.com/">Cloudera</a></div>
+              <div class="speaker-bio-full">
+                <p>Josh Wills is Cloudera's Senior Director of Data Science, working with customers and engineers to develop Hadoop-based solutions across a wide-range of industries. He is the founder and VP of the Apache Crunch project for creating optimized MapReduce pipelines in Java and lead developer of Cloudera ML, a set of open-source libraries and command-line tools for building machine learning models on Hadoop. Prior to joining Cloudera, Josh worked at Google, where he worked on the ad auction system and then led the development of the analytics infrastructure used in Google+.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-2b">
+            <div class="session-time">11:00am</div>
+            <div class="schedule-name">Demystifying Haskell</div>
+            <div class="schedule-abstract">
+              <p>An in-depth examination of the Fibonacci sequence intended to demonstrate the value of Haskell, bust myths about the difficulty of using Haskell and encourage further research and interest in the language.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/andrew-rademacher-small.jpg" alt="Andrew Rademacher">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/AndRademacher">Andrew Rademacher</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.linkedin.com/in/andrewrademacher">Independent</a></div>
+              <div class="speaker-bio-full">
+                <p>Andrew is a software consultant with experience delivering telemarketing, manufacturing and analytic systems to both web and native platforms.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-3a">
+            <div class="session-time">12:00pm</div>
+            <div class="schedule-name">Time-series data with Apache Cassandra</div>
+            <div class="schedule-abstract">
+              <p>This talk is geared around understanding the basics of how Apache Cassandra stores and access time series data. You'll understand why this is such a great use case and help power your next project. Audience members should be prepared for a technically oriented talk about Cassandra internals.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/patrick-mcfadin-small.jpg" alt="Patrick McFadin">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/PatrickMcFadin">Patrick McFadin</a></div>
+              <div class="speaker-bio">Chief Evangelist, Apache Cassandra</div>
+              <div class="speaker-bio"><a href="http://www.datastax.com/">DataStax</a></div>
+              <div class="speaker-bio-full">
+                <p>Patrick McFadin is regarded as one of the foremost experts of Apache Cassandra and data modeling techniques. As the Chief Evangelist for Apache Cassandra and consultant for DataStax, he has helped build some of the largest deployments in the world. Previous to DataStax, he was Chief Architect at Hobsons, an education services company. There, he spoke often on Web Application design and performance.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-3b">
+            <div class="session-time">12:00pm</div>
+            <div class="schedule-name">Using ECMAScript 6 Today</div>
+            <div class="schedule-abstract">
+              <p>This talk is for anyone interesting in learning about some of the new features of the next version of javascript. A quick run through of some of the features in ES6, followed by a look into how to use many of the ES6 features today using the Traceur compiler. We'll discuss source map options and briefly review the tool chain options to use ES6 in your project.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/scott-dillender-small.jpg" alt="Scott Dillender">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/smimp">Scott Dillender</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.vml.com/">VML</a></div>
+              <div class="speaker-bio-full">
+                <p>Scott is a software developer at VML. He's in the awkward stage of transitioning from a back end to a front end developer, where he longs for static typing, yet relishes the freedom and creativity allowed by JavaScript.</p>
+                <p>Scott has been doing software development in varying degrees since 2003. He is interested in Scala and functional programming and wishes he had more time to invest.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-4a">
+            <div class="session-time">1:00pm</div>
+            <div class="schedule-name">Analyzing and Reversing iOS Applications with iRET</div>
+            <div class="schedule-abstract">
+              <p>Standard iOS penetration testing consists of numerous repetitive manual tasks that must be executed in order to identify various vulnerabilities associated with the iOS binary, as well as various dependencies associated with the application. In this talk I will review the manual tasks that have traditionally been required in iOS penetration testing and then introduce a new industry tool called the iOS Reverse Engineering Toolkit (iRET) that will demonstrate how these manual tasks can be automated.</p>
+              <p>This talk is targeted towards mobile penetration testers and mobile developers. It will demonstrate how the iRET tool can be used to make penetration testing more efficient, as well as demonstrate how attackers go about reverse engineering mobile applications.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/stephen-jensen-small.jpeg" alt="Stephen Jensen">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/S3Jensen">Stephen Jensen</a></div>
+              <div class="speaker-bio">Principal Security Consultant</div>
+              <div class="speaker-bio"><a href="http://www.veracode.com/">Veracode</a></div>
+              <div class="speaker-bio-full">
+                <p>Steve Jensen is a Principal Consultant at Veracode. He has a background in software development, and has been actively engaged in application security for more than a decade. He specializes in all areas of application security, with a focus on mobile security and mobile security research. He has been performing mobile penetration testing for over 5 years and has performed responsible disclosures of mobile vulnerabilities to various companies, including airlines, banks and credit monitoring agencies.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-4b">
+            <div class="session-time">1:00pm</div>
+            <div class="schedule-name">Building a concurrent game engine in Erlang</div>
+            <div class="schedule-abstract">
+              <p>Erlang is a great language to implement concurrent software. Its actor model provides strong data isolation guarantees and immutable data structures makes reasoning about concurrency easier.</p>
+              <p>In this talk, we will explore Erlang's concurrency model in the context of a game engine that simulates trading commodities among players. The talk will include a quick introduction to Erlang syntax and the decomposition of the game nouns into Erlang processes. We will then demonstrate how Erlang's message passing, fault tolerance and process isolation features provide an ideal implementation language for massively concurrent software.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/mark-allen-small.jpg" alt="Mark Allen">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/bytemeorg">Mark Allen</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="https://github.com/mrallen1">Independent</a></div>
+              <div class="speaker-bio-full">
+                <p>Mark has over 15 years of experience as a software developer and system administrator. He has been writing code in Erlang for about 2 years and started a functional programming meet up in his hometown of Houston, Texas. He has spoken at OSCON, Erlang Factory and several Perl conferences.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-5a">
+            <div class="session-time">2:00pm</div>
+            <div class="schedule-name">Adventures in Semantic Dependent Data Compression</div>
+            <div class="schedule-abstract">
+              <p>Most of our code runs in a world where we don’t have to care too much about the number of bits a piece of data consumes, so we favor open and common data formats such as JSON or Protocol Buffers. However, when memory is constrained, such as on embedded systems, we can beat the system and achieve significant compression by understanding the nature of the data we are consuming. This talk will cover techniques and approaches to squeeze every last bit out of a dataset. It will touch on some concepts from information theory as well as some established general compression algorithms.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/michelle-brush-small.jpg" alt="Michelle Brush">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/michellebrush">Michelle Brush</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.cerner.com/">Cerner</a></div>
+              <div class="speaker-bio-full">
+                <p>Michelle Brush is a math geek turned computer geek with 13 years of software development experience. She has developed services, APIs, and algorithms related to security, data mining, compression, shortest path-finding algorithms, and spatial searching.  Recently, she has switched focus to mentoring and training early career software engineers. She is also the cofounder and chapter leader of the Kansas City chapter of Girl Develop It.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-5b">
+            <div class="session-time">2:00pm</div>
+            <div class="schedule-name">Packing It In: Images, Containers, and Config Management</div>
+            <div class="schedule-abstract">
+              <p>Learn about the many different tools gaining momentum to manage system configurations. Hear about when you should think about configuration management tools and when it might be OK to just pack it into a re-usable image. We’ll cover the basics around Docker and Packer before diving into a full-stack example leveraging all three topics in harmony together.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/michael-goetz-small.jpg" alt="Michael Goetz">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/michaelpgoetz">Michael Goetz</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.getchef.com/">Chef</a></div>
+              <div class="speaker-bio-full">
+                <p>Michael is a Sr. Consulting Engineer with Chef, where he helps customers manage their infrastructure automation. He has several years of systems software project experience and has been helping all types of people learn new technical concepts for more than a decade. An avid woodworker, Michael loves to spend time crafting furniture when he's not helping others solve their technical problems.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-6a">
+            <div class="session-time">3:00pm</div>
+            <div class="schedule-name">Property Based Testing for Better Code</div>
+            <div class="schedule-abstract">
+              <p>TDD leads to better production code, but it has its limitations. We can only write so many tests, and the more tests we maintain, the more tests we change with new requirements. Can we do better? I say yes. Property-based testing is a technique out of functional programming, one that works in any language. In this talk, I’ll use examples in ScalaCheck to demonstrate principles everyone can use: generation of every possible input, calculation of satisfactory output, and automation of hundreds of checks in a single test case. Property-based testing is much harder than the example-based tests we’re used to. That’s the point: compel us to think harder about the problem, leading to better production code. Come see how property-based testing can press you and your code to higher levels of correctness and simplicity.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/jessica-kerr-small.jpeg" alt="Jessica Kerr">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/jessitron">Jessica Kerr</a></div>
+              <div class="speaker-bio">Software Engineer</div>
+              <div class="speaker-bio"><a href="http://www.outpace.com/">Outpace</a></div>
+              <div class="speaker-bio-full">
+                <p>Jessica Kerr is a disloyal Java developer. She fell in love with functional programming for the sanity it can bring to code, in Scala, Clojure, Ruby, F#, and Java. Currently she writes Clojure and JS with Outpace from her home in St. Louis. Each morning she chases two crazy daughters onto the school bus. She roams to Europe and California and in between to share her excitement about functional programming, git, and property-based testing.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-6b">
+            <div class="session-time">3:00pm</div>
+            <div class="schedule-name">A Century Of Weather Data</div>
+            <div class="schedule-abstract">
+              <p>The weather is everywhere and always. That makes for a lot of data. This talk will walk you through how you can use MongoDB to store and analyze worldwide weather data from the entire 20th century in a graphical application. MongoDB natively supports geospatial indexing and querying, enabling you to build applications that are location-aware. In the most recent release of MongoDB, there have been significant enhancements to the geospatial indexing capabilities in MongoDB, such as polygon intersections, a more accurate spherical model, and better integration with MongoDB's Aggregation Framework. In this presentation, you'll learn about the new enhancements and how they can be useful in the analysis of weather data. Learn how to ask and answer questions about capacity planning and scaling for both real-time and ad-hoc operations when dealing with huge datasets.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/j-randall-hunt-small.jpg" alt="J Randall Hunt">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/jrhunt">J Randall Hunt</a></div>
+              <div class="speaker-bio">Developer Evangelist</div>
+              <div class="speaker-bio"><a href="http://www.mongodb.com/">MongoDB</a></div>
+              <div class="speaker-bio-full">
+                <p>J. Randall Hunt is a Developer Evangelist at MongoDB. Formerly of NASA, Fondu, and HackNY, Randall works mainly in Python and Java. Randall can do a handstand longer than any of the other speakers or attendees.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-7a">
+            <div class="session-time">4:00pm</div>
+            <div class="schedule-name">Scaling the Halo Backend Service on Windows Azure</div>
+            <div class="schedule-abstract">
+              <p>The backend services for the award winning Halo 4 video game are hosted in Windows Azure. Halo is played by millions of fans and gamers expect experiences with low latencies. In order to meet these needs, the Halo team partnered with Microsoft’s Extreme Computing group to build the Halo cloud services on top of the Orleans Distributed Actor System. This talk will outline the experiences of the Halo team as they built their services and discuss the benefits of using a virtual actor model as a scalable distributed computing abstraction.</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/hoop-somuah-small.jpeg" alt="Hoop Somuah">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/hoopsomuah">Hoop Somuah</a></div>
+              <div class="speaker-bio">Principal Software Design Engineer</div>
+              <div class="speaker-bio"><a href="http://www.343industries.org/">343 Industries</a></div>
+              <div class="speaker-bio-full">
+                <p>Hoop is a Principal Software Design Engineer who has been working on various service platforms and large scale service at Microsoft for over a decade. In the past 4 years he has turned his attention to the growing use of the cloud to build distributed systems that power entertainment experiences. At 343 Industries he has spent the past 3 years driving the architecture of services that power experiences in the Halo franchise.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="session" id="tuesday-7b">
+            <div class="session-time">4:00pm</div>
+            <div class="schedule-name">Mobile Ad Hoc Networks Are Coming, But We Aren't Ready</div>
+            <div class="schedule-abstract">
+              <p>In any given day, you likely carry your pocket computer (AKA "smartphone") within wireless range of hundreds of other pocket computers. In schools all over the US, students are sending an unrelenting stream of instant messages to each other while sitting in dense networks of little wireless devices. Yet we continue to rely on cellular towers, WiFi access points, and the Internet to transmit messages for us while we are actually closer to the destination than they are!</p>
+              <p>Mobile ad hoc networks (MANETs) consist of many devices moving around and communicating with and through each other, without any predetermined infrastructure. While MANETs have been a research topic since the 1970s, much of the research has focused on the networking piece: basically the transport layer protocols and below. Much less attention has been given to creating and supporting applications for these networks, yet killer applications drive adoption!</p>
+              <p>This talk will briefly describe MANETs, but focus mostly on MANET application development: the challenges, the potential solutions, and the very promising - and very near - future. MANETs are ready to break though to the mainstream. Will you be ready?</p>
+            </div>
+            <div class="speaker">
+              <img src="../img/speakers/justin-collins-small.jpg" alt="Justin Collins">
+              <div class="speaker-bio speaker-name"><a href="https://twitter.com/presidentbeef">Justin Collins</a></div>
+              <div class="speaker-bio">Security Engineer</div>
+              <div class="speaker-bio"><a href="https://www.twitter.com/">Twitter</a> and <a href="http://brakemanscanner.org/">Brakeman</a></div>
+              <div class="speaker-bio-full">
+                <p>Justin is a PhD candidate at UCLA and a member of the application security team at Twitter.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-48239617-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
