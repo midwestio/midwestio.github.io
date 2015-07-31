@@ -43,36 +43,33 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['img/speakers/akhilesh-gupta.jpg',
+          src: ['img/speakers/alissa-bonas.jpg',
                 'img/speakers/andrew-rademacher.jpg',
-                'img/speakers/avdi-grimm.jpg',
-                'img/speakers/daniel-luxemburg.jpg',
-                'img/speakers/hoop-somuah.jpeg',
-                'img/speakers/j-randall-hunt.jpg',
-                'img/speakers/jeff-norris.jpg',
-                'img/speakers/jeremy-mikola.jpg',
-                'img/speakers/jessica-kerr.jpeg',
-                'img/speakers/jim-duey.jpeg',
+                'img/speakers/casey-rosenthal.jpg',
+                'img/speakers/chet-mancini.jpg',
+                'img/speakers/chris-keathley.jpg',
+                'img/speakers/denisse-osorio-de-large.jpg',
+                'img/speakers/dustin-whittle.jpg',
+                'img/speakers/elissa-shevinsky.jpg',
+                'img/speakers/heath-borders.jpg',
+                'img/speakers/joel-martin.jpg',
                 'img/speakers/john-daily.jpg',
-                'img/speakers/josh-wills.jpg',
-                'img/speakers/julia-elman.jpg',
-                'img/speakers/julia-grace.jpg',
-                'img/speakers/justin-collins.jpg',
-                'img/speakers/keith-casey.jpeg',
-                'img/speakers/leah-hanson.jpg',
-                'img/speakers/mark-allen.jpg',
-                'img/speakers/matt-klosterman.jpg',
-                'img/speakers/micah-whitacre.jpg',
-                'img/speakers/michael-goetz.jpg',
-                'img/speakers/michelle-brush.jpg',
-                'img/speakers/mina-markham.jpg',
-                'img/speakers/patrick-mcfadin.jpg',
-                'img/speakers/philip-tellis.jpg',
-                'img/speakers/scott-dillender.jpg',
-                'img/speakers/ryan-brush.jpg',
-                'img/speakers/stephen-jensen.jpeg',
-                'img/speakers/tyson-stewart.jpg',
-                'img/speakers/zeeshan-lakhani.jpg']
+                'img/speakers/jordan-kalal.jpg',
+                'img/speakers/juliet-hougland.jpg',
+                'img/speakers/justin-searls.jpg',
+                'img/speakers/lyle-shearer.jpg',
+                'img/speakers/matt-steele.jpg',
+                'img/speakers/mike-harris.jpg',
+                'img/speakers/nic-jansma.jpg',
+                'img/speakers/nicolas-kral.jpg',
+                'img/speakers/robyn-larsen.jpg',
+                'img/speakers/safia-abdalla.jpg',
+                'img/speakers/seth-and-kyle.jpg',
+                'img/speakers/siddharth-kothari.jpg',
+                'img/speakers/susan-potter.jpg',
+                'img/speakers/tim-freund.jpg',
+                'img/speakers/will-klein.jpg',
+                'img/speakers/yitzchok-willroth.jpg']
         }]
       }
     }
@@ -82,6 +79,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-responsive-images');
 
   // Default task(s).
-  grunt.registerTask('default', ['responsive_images:dev']);
+  grunt.registerTask('default', ['responsive_images:dev', 'responsive_images:speakers']);
 
 };
