@@ -882,7 +882,7 @@ a:hover {
 }
 @media screen and (min-width: 768px) {
   .section-banner .location {
-    width: 290px;
+    width: 260px;
   }
 }
 .section-banner img {
@@ -1109,6 +1109,9 @@ td {
 }
 .section-sponsors .silver {
   height: 80px;
+}
+.section-sponsors .bronze {
+  height: 60px;
 }
 .section-sponsors img {
   vertical-align: middle;
