@@ -272,28 +272,19 @@ th, td {
 .section-sponsors {
   .sponsor {
     border-bottom: 1px solid #ddd;
-    .dst-logo {
-      width: 300px;
-      height: auto;
-    }
-    .vml-logo {
-      width: 200px;
-      height: auto;
-    }
     @media @small {
       img {
         width: 85%;
         height: auto;
-        &.silver {
-          width: 40%;
-          height: auto;
+        &.gold {
+          width: 60%;
         }
-      }
-      .dst-logo {
-        width: 60%;
-      }
-      .vml-logo {
-        width: 20%;
+        &.silver {
+          width: 50%;
+        }
+        &.bronze {
+          width: 40%;
+        }
       }
     }
   }
@@ -307,7 +298,8 @@ th, td {
   }
 
   .gold {
-    height: 100px;
+    width: 300px;
+    height: auto;
   }
 
   .silver {

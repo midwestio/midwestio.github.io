@@ -1074,28 +1074,19 @@ td {
 .section-sponsors .sponsor {
   border-bottom: 1px solid #ddd;
 }
-.section-sponsors .sponsor .dst-logo {
-  width: 300px;
-  height: auto;
-}
-.section-sponsors .sponsor .vml-logo {
-  width: 200px;
-  height: auto;
-}
 @media screen and (max-width: 767px) {
   .section-sponsors .sponsor img {
     width: 85%;
     height: auto;
   }
-  .section-sponsors .sponsor img.silver {
-    width: 40%;
-    height: auto;
-  }
-  .section-sponsors .sponsor .dst-logo {
+  .section-sponsors .sponsor img.gold {
     width: 60%;
   }
-  .section-sponsors .sponsor .vml-logo {
-    width: 20%;
+  .section-sponsors .sponsor img.silver {
+    width: 50%;
+  }
+  .section-sponsors .sponsor img.bronze {
+    width: 40%;
   }
 }
 .section-sponsors .diamond {
@@ -1105,7 +1096,8 @@ td {
   height: 120px;
 }
 .section-sponsors .gold {
-  height: 100px;
+  width: 300px;
+  height: auto;
 }
 .section-sponsors .silver {
   height: 80px;
