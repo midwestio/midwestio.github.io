@@ -61,6 +61,7 @@ module.exports = function(grunt) {
                 'img/speakers/lyle-shearer.jpg',
                 'img/speakers/matt-steele.jpg',
                 'img/speakers/mike-harris.jpg',
+                'img/speakers/neil-miller.jpg',
                 'img/speakers/nic-jansma.jpg',
                 'img/speakers/nicolas-kral.jpg',
                 'img/speakers/safia-abdalla.jpg',
