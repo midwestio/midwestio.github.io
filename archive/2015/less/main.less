@@ -1,0 +1,456 @@
+@import 'normalize';
+@import 'mixins';
+
+@import 'components/flag';
+@import 'components/grid';
+@import 'components/typography';
+
+@import 'sections/layout';
+
+// Colors
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@grayLightest:          #f5f5f5;
+@white:                 #fff;
+@links:                 #005CCD;
+@links-hover:           #333;
+
+// Typography
+@baseFontSize:          18px;
+@baseLineHeight:        20px;
+@baseFontFamily: 'Open Sans', sans-serif;
+@baseFontWeight: normal;
+@baseTextColor: #222;
+@textColor: #676B6A;
+
+@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
+@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsColor:         inherit; // empty to use BS default, @textColor
+
+// Responsive
+@ie8: ~"\0screen";   // IE8 Hack - Source: http://browserhacks.com/#hack-c9242a5ec3f073257e275102be15d95f
+@small: ~"screen and (max-width: 767px)";                                                 // Phone
+@medium: ~"screen and (min-width: 768px)";                                                // Tablet
+@mediumLandscape: ~"screen and (max-device-width: 1024px) and (orientation: landscape)";  // Tablet Landscape
+@large: ~"screen and (min-width: 1008px)";                                                // Desktop
+@xlarge: ~"screen and (min-width: 1248px)";                                               // Desktop Large
+@xxlarge: ~"screen and (min-width: 1408px)";                                              // Desktop XLarge
+
+// Grid
+@grid-columns: 12;
+@grid-gutter-width: 20px; // Spacing betweeen columns
+@grid-margin-width: 20px; // Spacing on outer sides of grid
+
+a {
+  text-decoration: none;
+  color: @links;
+  &:hover {
+    text-decoration: underline;
+    color: @links-hover;
+  }
+  &:visited {
+
+  }
+}
+
+//===============================
+// Sections
+.section-banner {
+  background-color: #000;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+  background-image: url(../img/banners/kansas-city-skyline-sunset.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-skyline-sunset-large.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-skyline-sunset-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-skyline-sunset-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-sunset-xlarge.jpg); }
+
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .month {
+    display: block;
+    @media @small {
+      display: inline;
+    }
+  }
+
+  .logo {
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 75px auto 20px;
+    @media @small {
+      height: 75px;
+      width: 75px;
+      margin: 20px auto;
+    }
+  }
+
+  .h1, .h2, .h3, .h4 {
+   line-height: 1em;
+  }
+
+  .location {
+    padding: 100px 20px;
+    background-color: rgba(0,0,0,.6);
+
+    hr {
+      width: 230px;
+    }
+
+    @media @small {
+      margin: 20px -20px 0;
+      padding: 20px;
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 50%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,.6))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 50%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 50%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 50%); /* IE10+ */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 50%); /* W3C */
+    }
+
+    @media @medium {
+      width: 300px;
+    }
+  }
+
+  img {
+    max-width: 60%;
+    @media @medium {
+      margin-top: 60px;
+    }
+  }
+}
+
+.section-venue {
+  .venue-info {
+    padding-top: 150px;
+
+    @media @small {
+      padding-top: 0;
+    }
+  }
+}
+
+.section-parallax-img {
+  background-size: 120%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0;
+  height: 600px;
+
+  @media @medium {
+    background-attachment: fixed;
+  }
+
+  @media @large {
+    background-size: 100%;
+  }
+
+  @media @small {
+    height: 250px;
+  }
+}
+
+.img-venue {
+  background-image: url(../img/banners/marriott.jpg);
+  @media @small {   background-image: url(../img/banners/marriott-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/marriott-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/marriott-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/marriott-xlarge.jpg); }
+}
+
+.img-kc-skyline-day {
+  background-image: url(../img/banners/kansas-city-skyline-day.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-skyline-day-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-skyline-day-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-skyline-day-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-day-xlarge.jpg); }
+}
+
+.img-kc-skyline-night {
+  background-image: url(../img/banners/kansas-city-skyline-night.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-skyline-night-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-skyline-night-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-skyline-night-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-skyline-night-xlarge.jpg); }
+}
+
+.img-kc-plaza {
+  background-image: url(../img/banners/kansas-city-plaza.jpg);
+  @media @small {   background-image: url(../img/banners/kansas-city-plaza-small.jpg); }
+  @media @medium {   background-image: url(../img/banners/kansas-city-plaza-medium.jpg); }
+  @media @large {   background-image: url(../img/banners/kansas-city-plaza-large.jpg); }
+  @media @xlarge {   background-image: url(../img/banners/kansas-city-plaza-xlarge.jpg); }
+}
+
+header {
+  a {
+    &:hover, &.active {
+      color: @grayLight;
+      text-decoration: none;
+      svg path {
+        fill: @grayLight;
+      }
+    }
+    .logo {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      top: 5px;
+    }
+  }
+
+}
+
+table {
+  margin: auto;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  border-bottom: 2px solid black;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+.padded-heading {
+  padding-bottom: 20px;
+}
+
+.sponsorship-heading {
+  font-size: larger;
+}
+
+.sponsorship-item {
+  width: 80%;
+  padding-right: 50px;
+}
+
+.sponsorship-item-name {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.sponsorship-item-desc {
+  color: @gray;
+}
+
+#venue .map {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+  iframe {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.section-sponsors {
+  .sponsor {
+    .dst-logo {
+      width: 150px;
+      height: auto;
+    }
+
+    border-bottom: 1px solid #ddd;
+    @media @small {
+      img {
+        width: 85%;
+        height: auto;
+        &.gold {
+          width: 60%;
+        }
+        &.silver {
+          width: 50%;
+        }
+        &.bronze {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  .diamond {
+    height: 150px;
+  }
+
+  .platinum {
+    height: 120px;
+  }
+
+  .gold {
+    width: 300px;
+    height: auto;
+  }
+
+  .silver {
+    height: 80px;
+  }
+
+  .bronze {
+    height: 60px;
+  }
+
+  img {
+    vertical-align: middle;
+    padding: 30px;
+    width: auto;
+  }
+}
+
+.section-schedule {
+  .schedule-slot {
+    border: 1px solid #ddd;
+
+    @media @small {
+      padding: 5px 15px;
+    }
+  }
+
+  .schedule-slot-muted {
+    background-color: #e9e9e9;
+  }
+
+  .schedule-track1 {
+    @media not @small {
+      border-right: 1px solid #ddd;
+    }
+  }
+
+  .schedule-track2 {
+    @media not @small {
+      border-left: 1px solid #ddd;
+    }
+  }
+
+  .schedule-time {
+    margin-top: 10px;
+    display: inherit;
+    text-align: left;
+  }
+
+  .schedule-name {
+    margin-top: 5px;
+    text-align: left;
+    height: 30px;
+  }
+
+  .schedule-day {
+    .schedule-date {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  }
+
+  .speaker {
+    width: 420px;
+    height: 100px;
+  }
+}
+
+.speaker {
+  text-align: left;
+  margin: 15px 0;
+
+  .speaker-name {
+    font-weight: bold;
+  }
+
+  .speaker-bio {
+    position: relative;
+    top: 20px;
+    @media @small {
+      width: 160px;
+      overflow: auto;
+    }
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid;
+    box-shadow: -2px 2px 6px #888;
+  }
+}
+
+.sessions {
+  list-style: none;
+  line-height: 25px;
+  padding: 0 10px;
+
+  .session {
+    clear: both;
+    border-bottom: 1px dashed #ccc;
+    margin: 25px 0;
+
+    .schedule-name {
+      font-weight: bold;
+      color: @black;
+    }
+
+    .schedule-abstract {
+      margin: 25px 0;
+      text-align: justify;
+      ul {
+        margin-bottom: 10px;
+      }
+    }
+
+    .speaker {
+      margin: 25px;
+      @media @small {
+        margin: 10px;
+        img {
+          float: none;
+        }
+      }
+    }
+
+    .speaker-bio-full {
+      font-style: italic;
+      padding-top: 40px;
+      text-align: justify;
+    }
+
+    .session-time {
+      display: none;
+    }
+
+    @media not @small {
+      &:before {
+        display: block;
+        content: " ";
+        margin-top: -100px;
+        height: 100px;
+        visibility: hidden;
+      }
+    }
+  }
+}
