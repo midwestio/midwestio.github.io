@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['img/banners/marriott.jpg',
+          src: ['img/banners/nelson-atkins-museum-of-art.jpg',
                 'img/banners/kansas-city-skyline-sunset.jpg',
                 'img/banners/kansas-city-skyline-night.jpg',
                 'img/banners/kansas-city-skyline-day.jpg',
@@ -43,34 +43,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ['img/speakers/alissa-bonas.jpg',
-                'img/speakers/andrew-rademacher.jpg',
-                'img/speakers/brian-graves.jpg',
-                'img/speakers/casey-rosenthal.jpg',
-                'img/speakers/chet-mancini.jpg',
-                'img/speakers/chris-keathley.jpg',
-                'img/speakers/denisse-osorio-de-large.jpg',
-                'img/speakers/elissa-shevinsky.jpg',
-                'img/speakers/heath-borders.jpg',
-                'img/speakers/jeff-norris.jpg',
-                'img/speakers/joel-martin.jpg',
-                'img/speakers/john-daily.jpg',
-                'img/speakers/jordan-kalal.jpg',
-                'img/speakers/juliet-hougland.jpg',
-                'img/speakers/justin-searls.jpg',
-                'img/speakers/lyle-shearer.jpg',
-                'img/speakers/matt-steele.jpg',
-                'img/speakers/mike-harris.jpg',
-                'img/speakers/neil-miller.jpg',
-                'img/speakers/nic-jansma.jpg',
-                'img/speakers/nicolas-kral.jpg',
-                'img/speakers/safia-abdalla.jpg',
-                'img/speakers/seth-and-kyle.jpg',
-                'img/speakers/siddharth-kothari.jpg',
-                'img/speakers/susan-potter.jpg',
-                'img/speakers/tim-freund.jpg',
-                'img/speakers/will-klein.jpg',
-                'img/speakers/yitzchok-willroth.jpg']
+          src: []
         }]
       }
     }

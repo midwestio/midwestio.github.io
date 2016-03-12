@@ -50,4 +50,4 @@ kansas-city-skyline-night.jpg - Courtesy of http://www.flickr.com/photos/photogu
 
 kansas-city-plaza.jpg - Courtesy of https://www.flickr.com/photos/d_orf/3506339720/sizes/l/
 
-marriott.jpg - Courtesy of the [Kansas City Marriott Downtown](http://www.marriott.com/hotels/travel/mcidt-kansas-city-marriott-downtown/)
+nelson-atkins-museum-of-art.jpg - Courtesy of https://www.flickr.com/photos/jpellgen/22654174641/sizes/l/

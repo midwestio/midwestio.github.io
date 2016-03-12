@@ -925,26 +925,26 @@ a:hover {
   }
 }
 .img-venue {
-  background-image: url(../img/banners/marriott.jpg);
+  background-image: url(../img/banners/nelson-atkins-museum-of-art.jpg);
 }
 @media screen and (max-width: 767px) {
   .img-venue {
-    background-image: url(../img/banners/marriott-small.jpg);
+    background-image: url(../img/banners/nelson-atkins-museum-of-art-small.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .img-venue {
-    background-image: url(../img/banners/marriott-medium.jpg);
+    background-image: url(../img/banners/nelson-atkins-museum-of-art-medium.jpg);
   }
 }
 @media screen and (min-width: 1008px) {
   .img-venue {
-    background-image: url(../img/banners/marriott-large.jpg);
+    background-image: url(../img/banners/nelson-atkins-museum-of-art-large.jpg);
   }
 }
 @media screen and (min-width: 1248px) {
   .img-venue {
-    background-image: url(../img/banners/marriott-xlarge.jpg);
+    background-image: url(../img/banners/nelson-atkins-museum-of-art-xlarge.jpg);
   }
 }
 .img-kc-skyline-day {
@@ -1073,6 +1073,10 @@ td {
 }
 .section-sponsors .sponsor {
   border-bottom: 1px solid #ddd;
+}
+.section-sponsors .sponsor .dst-logo {
+  width: 150px;
+  height: auto;
 }
 @media screen and (max-width: 767px) {
   .section-sponsors .sponsor img {
