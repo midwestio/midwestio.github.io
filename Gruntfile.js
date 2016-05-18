@@ -43,7 +43,22 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: []
+          src: [
+            'img/speakers/aaron-blythe.jpg',
+            'img/speakers/alicia-cianciolo.jpg',
+            'img/speakers/amanda-harlin.jpg',
+            'img/speakers/aysylu-greenberg.jpg',
+            'img/speakers/brian-troutwine.jpg',
+            'img/speakers/david-greenberg.jpg',
+            'img/speakers/flavio-percoco.jpg',
+            'img/speakers/janelle-klein.jpg',
+            'img/speakers/jenni-syed.jpg',
+            'img/speakers/john-hughes.jpg',
+            'img/speakers/jon-moore.jpg',
+            'img/speakers/laura-ku.jpg',
+            'img/speakers/mark-allen.jpg',
+            'img/speakers/sean-cribbs.jpg'
+          ]
         }]
       }
     }
