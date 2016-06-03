@@ -1101,18 +1101,18 @@ td {
 }
 .section-sponsors .gold {
   width: 300px;
-  height: auto;
 }
 .section-sponsors .silver {
-  height: 80px;
+  width: 150px;
 }
 .section-sponsors .bronze {
-  height: 60px;
+  width: 100px;
 }
 .section-sponsors img {
   vertical-align: middle;
   padding: 30px;
   width: auto;
+  height: auto;
 }
 .section-schedule .schedule-slot {
   border: 1px solid #ddd;
