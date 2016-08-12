@@ -48,7 +48,7 @@ module.exports = function(grunt) {
             'img/speakers/alicia-cianciolo.jpg',
             'img/speakers/amanda-harlin.jpg',
             'img/speakers/aysylu-greenberg.jpg',
-            'img/speakers/brian-troutwine.jpg',
+            'img/speakers/piero-ferrante.jpg',
             'img/speakers/david-greenberg.jpg',
             'img/speakers/flavio-percoco.jpg',
             'img/speakers/janelle-klein.jpg',

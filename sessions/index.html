@@ -121,20 +121,40 @@
 
           <li class="session" id="monday-4a">
             <div class="session-time">1:00pm</div>
-            <div class="schedule-name">Fetching Moths from the Works: Correctness Methods in Software</div>
+            <div class="schedule-name">Creating a Contemporary Risk Management System Using Python</div>
             <div class="schedule-abstract">
-              <p>We live in a nice world. There’s a wealth of historical thought on achieving correctness in software–shipping code that does only what is intended, not less and not more–and there are a whole bunch of methods available to us as practitioners. Some of these are hard to apply, some are easy. For instance, case testing is widely used and considered standard practice. Property testing is understood to exist but not widely used. The application of advanced logics? Way out there.</p>
-              <p>If you look around you’ll find a lot of software fails a lot of the time. Why is that?</p>
-              <p>In this talk I’ll give an overview of the methods for producing correct systems and will discuss each in its historical context. With each method, we’ll keep an eye out for present applications and the difficulty of doing so. We’ll discuss why there’s so much buggy software in the world. I expect there will be talk of spaceships a bit.</p>
-              <p>By the end of this talk you ought to be able to make reasoned decisions about applying correctness methods in your own work and have a good shot at building better software.</p>
+              <p>Engineering a sophisticated in-house risk management solution for a commercial lending platform doesn't necessarily need to involve millions of lines of low-level code, clunky desktop applications, fancy front-end development, or messy spreadsheets. That is, so long as the problem is approached objectively and the solutions are evaluated critically.</p>
+              <p>This talk will focus on the basics of lending risk mitigation (related to underwriting and portfolio management), a high-level overview of the architectural requirements, and the packages that were leveraged along the way; namely:</p>
+              <ul>
+                <li>
+                  <a href="https://github.com/pydata/pandas">pandas</a> for data preparation
+                  <ul>
+                    <li>Organizing panels and cleaning time series data</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://github.com/statsmodels/statsmodels">statsmodels</a> and <a href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a> for regression and classification
+                  <ul>
+                    <li>Predicting accounts receivable discontinuation and bankruptcy probabilities</li>
+                  </ul>
+                </li>
+                <li>
+                  R/<a href="http://rpy2.bitbucket.org/">rpy2</a> for integrating R's advanced forecasting capabilities
+                  <ul>
+                    <li>Forecast comparison using the <a href="https://cran.r-project.org/web/packages/forecast/index.html">forecast</a> package and the <a href="https://cran.r-project.org/web/packages/bsts/index.html">bsts</a> package</li>
+                  </ul>
+                </li>
+                <li><a href="https://github.com/adamhajari/spyre">Spyre</a> for designing a lightweight and easily maintainable web application</li>
+              </ul>
+              <p>Most importantly we'll share a demo of the web application to see how it all comes together. To be clear, this IS NOT a product offering or any kind or SaaS; it was built to be used internally and generalizes well for other use cases.</p>
             </div>
             <div class="speaker">
-                <img src="/img/speakers/brian-troutwine-small.jpg" alt="Brian Troutwine">
-                <div class="speaker-bio speaker-name"><a href="https://twitter.com/bltroutwine">Brian Troutwine</a></div>
-                <div class="speaker-bio">Software Engineer</div>
-                <div class="speaker-bio"><a href="https://postmates.com/">Postmates</a></div>
+                <img src="/img/speakers/piero-ferrante-small.jpg" alt="Piero Ferrante">
+                <div class="speaker-bio speaker-name"><a href="https://twitter.com/the_real_pdf">Piero Ferrante</a></div>
+                <div class="speaker-bio">Director of Data Science</div>
+                <div class="speaker-bio"><a href="https://c2fo.com/">C2FO</a></div>
               <div class="speaker-bio-full">
-                <p>JBrian L. Troutwine is a software engineer with a focus on fault-tolerance and real-time critical systems. He works extensively in Erlang and is an Infrastructure Engineer at Postmates. Brian likes things that cause disasters on failure.</p>
+                <p>Piero Ferrante is the Director of Data Science at C2FO. He and his team are focused on optimizing C2FO’s capital markets through applied machine learning and the development of quantitative risk management systems. In the past he has applied his expertise in healthcare, telecom, insurance, and mobile advertising at Fortune 500 companies and startups. He holds a M.S. in Predictive Analytics from Northwestern University, a B.S. in Finance and Management Information Systems from the University of Delaware, and is an adjunct professor of Text Analytics at Rockhurst University. Piero also helps organize the Kansas City Data Science Meetup and advises Play-it Heath, a digital health engagement solution, on algorithms and data strategy.</p>
               </div>
             </div>
           </li>
