@@ -46,7 +46,7 @@ module.exports = function(grunt) {
           src: [
             'img/speakers/aaron-blythe.jpg',
             'img/speakers/alicia-cianciolo.jpg',
-            'img/speakers/amanda-harlin.jpg',
+            'img/speakers/michelle-brush.jpg',
             'img/speakers/aysylu-greenberg.jpg',
             'img/speakers/piero-ferrante.jpg',
             'img/speakers/david-greenberg.jpg',
